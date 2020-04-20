@@ -1,0 +1,78 @@
+Alisha Kulkarni
+ASU ID-1215311903
+
+
+The project contains the following files:
+
+->	rbt530_drv.c (Driver for RB tree structure)
+
+->	rbt530.h
+
+->	main.c	(User code)
+
+->	Makefile	
+
+->      RBprobe.c
+
+
+
+In order to implement this project, following things need to be done:
+
+
+1. make clean
+
+2. make all
+
+3. insmod rbt530_drv.ko
+
+4. insmod RBprobe.ko
+
+5. gcc -Wall -pthread -o main main.c
+
+6. ./main a b c
+
+	 
+	*******Very Important*****
+While ./main, a and b need to be passed in the command line, where a = device number and b = IOCTL command(Ascending/Descending), c = probe_write/probe_read
+
+
+	rbt530_dev1 - ./main 1  0  probe_write/probe_read    (Type either read or write not both)
+                      ./main 1  1  probe_write/probe_read           
+
+        rbt530_dev2 - ./main 2  0  probe_write/probe_read  
+                      ./main 2  1  probe_write/probe_read   
+
+7. dmesg
+
+8. rmmod RBprobe.ko
+
+7. rmmod rb530_drv.ko
+
+8 rm main
+
+
+
+The log files in the folder show a sample of the read/write of the rbtree.The kprobe can be inserted 
+	in the read/write with either of the devices 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

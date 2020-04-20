@@ -1,0 +1,2033 @@
+[    0.000000] microcode: microcode updated early to revision 0xca, date = 2019-10-03
+[    0.000000] Linux version 5.3.0-40-generic (buildd@lcy01-amd64-026) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #32-Ubuntu SMP Fri Jan 31 20:24:34 UTC 2020 (Ubuntu 5.3.0-40.32-generic 5.3.18)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.3.0-40-generic root=UUID=169ff337-6f80-475f-8d0e-283b1c3309c3 ro quiet splash vt.handoff=7
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   zhaoxin   Shanghai  
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[    0.000000] x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[    0.000000] x86/fpu: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x00000000000903ff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000090400-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000007ae4cfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007ae4d000-0x000000007ae4dfff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000007ae4e000-0x000000008a5e3fff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000008a5e4000-0x000000008a624fff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x000000008a625000-0x000000008af0dfff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000008af0e000-0x000000008f7fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fe000000-0x00000000fe010fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000026f7fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 3.0.0 present.
+[    0.000000] DMI: Dell Inc. Inspiron 5570/0PK559, BIOS 1.1.1 01/25/2018
+[    0.000000] tsc: Detected 2000.000 MHz processor
+[    0.002388] tsc: Detected 1999.968 MHz TSC
+[    0.002388] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.002389] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.002393] last_pfn = 0x26f800 max_arch_pfn = 0x400000000
+[    0.002396] MTRR default type: write-back
+[    0.002396] MTRR fixed ranges enabled:
+[    0.002397]   00000-9FFFF write-back
+[    0.002398]   A0000-BFFFF uncachable
+[    0.002398]   C0000-FFFFF write-protect
+[    0.002399] MTRR variable ranges enabled:
+[    0.002400]   0 base 00C0000000 mask 7FC0000000 uncachable
+[    0.002401]   1 base 00A0000000 mask 7FE0000000 uncachable
+[    0.002401]   2 base 0090000000 mask 7FF0000000 uncachable
+[    0.002402]   3 base 008E000000 mask 7FFE000000 uncachable
+[    0.002402]   4 base 008D000000 mask 7FFF000000 uncachable
+[    0.002403]   5 disabled
+[    0.002403]   6 disabled
+[    0.002403]   7 disabled
+[    0.002404]   8 disabled
+[    0.002404]   9 disabled
+[    0.002708] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.002833] last_pfn = 0x7ae4d max_arch_pfn = 0x400000000
+[    0.008644] found SMP MP-table at [mem 0x000fcf60-0x000fcf6f]
+[    0.008692] check: Scanning 1 areas for low memory corruption
+[    0.008695] Using GB pages for direct mapping
+[    0.008696] BRK [0x19a801000, 0x19a801fff] PGTABLE
+[    0.008698] BRK [0x19a802000, 0x19a802fff] PGTABLE
+[    0.008698] BRK [0x19a803000, 0x19a803fff] PGTABLE
+[    0.008723] BRK [0x19a804000, 0x19a804fff] PGTABLE
+[    0.008724] BRK [0x19a805000, 0x19a805fff] PGTABLE
+[    0.008803] BRK [0x19a806000, 0x19a806fff] PGTABLE
+[    0.008821] BRK [0x19a807000, 0x19a807fff] PGTABLE
+[    0.008861] RAMDISK: [mem 0x3248d000-0x3523dfff]
+[    0.008868] ACPI: Early table checksum verification disabled
+[    0.008870] ACPI: RSDP 0x00000000000EBAD0 000024 (v02 DELL  )
+[    0.008872] ACPI: XSDT 0x000000008A5F10B8 0000F4 (v01 DELL   CBX3     01072009 AMI  00010013)
+[    0.008876] ACPI: FACP 0x000000008A616550 00010C (v05 DELL   CBX3     01072009 AMI  00010013)
+[    0.008880] ACPI: DSDT 0x000000008A5F1240 02530A (v02 DELL   CBX3     01072009 INTL 20160422)
+[    0.008882] ACPI: FACS 0x000000008AF0B180 000040
+[    0.008884] ACPI: APIC 0x000000008A616660 0000BC (v03 DELL   CBX3     01072009 AMI  00010013)
+[    0.008886] ACPI: FPDT 0x000000008A616720 000044 (v01 DELL   CBX3     01072009 AMI  00010013)
+[    0.008887] ACPI: FIDT 0x000000008A616768 0000AC (v01 DELL   CBX3     01072009 AMI  00010013)
+[    0.008889] ACPI: MCFG 0x000000008A616818 00003C (v01 DELL   CBX3     01072009 MSFT 00000097)
+[    0.008891] ACPI: HPET 0x000000008A616858 000038 (v01 DELL   CBX3     01072009 AMI. 0005000B)
+[    0.008892] ACPI: SSDT 0x000000008A616890 000359 (v01 SataRe SataTabl 00001000 INTL 20160422)
+[    0.008894] ACPI: BOOT 0x000000008A616BF0 000028 (v01 DELL   CBX3     01072009 AMI  00010013)
+[    0.008896] ACPI: SSDT 0x000000008A616C18 0012DE (v02 SaSsdt SaSsdt   00003000 INTL 20160422)
+[    0.008897] ACPI: HPET 0x000000008A617EF8 000038 (v01 INTEL  KBL-ULT  00000001 MSFT 0000005F)
+[    0.008899] ACPI: SSDT 0x000000008A617F30 000825 (v02 INTEL  xh_OEMBD 00000000 INTL 20160422)
+[    0.008901] ACPI: UEFI 0x000000008A618758 000042 (v01                 00000000      00000000)
+[    0.008903] ACPI: SSDT 0x000000008A6187A0 0017AE (v02 CpuRef CpuSsdt  00003000 INTL 20160422)
+[    0.008904] ACPI: LPIT 0x000000008A619F50 000094 (v01 INTEL  KBL-ULT  00000000 MSFT 0000005F)
+[    0.008906] ACPI: WSMT 0x000000008A619FE8 000028 (v01 DELL   CBX3     00000000 MSFT 0000005F)
+[    0.008908] ACPI: SSDT 0x000000008A61A010 000141 (v02 INTEL  HdaDsp   00000000 INTL 20160422)
+[    0.008910] ACPI: SSDT 0x000000008A61A158 00029F (v02 INTEL  sensrhub 00000000 INTL 20160422)
+[    0.008912] ACPI: SSDT 0x000000008A61A3F8 003002 (v02 INTEL  PtidDevc 00001000 INTL 20160422)
+[    0.008913] ACPI: SSDT 0x000000008A61D400 000517 (v02 INTEL  TbtTypeC 00000000 INTL 20160422)
+[    0.008915] ACPI: DBGP 0x000000008A61D918 000034 (v01 INTEL           00000002 MSFT 0000005F)
+[    0.008917] ACPI: DBG2 0x000000008A61D950 000054 (v00 INTEL           00000002 MSFT 0000005F)
+[    0.008918] ACPI: SSDT 0x000000008A61D9A8 0007AC (v02 INTEL  UsbCTabl 00001000 INTL 20160422)
+[    0.008920] ACPI: SSDT 0x000000008A61E158 004E1D (v02 DptfTa DptfTabl 00001000 INTL 20160422)
+[    0.008922] ACPI: MSDM 0x000000008A622F78 000055 (v03 DELL   CBX3     06222004 AMI  00010013)
+[    0.008923] ACPI: SLIC 0x000000008A622FD0 000176 (v03 DELL   CBX3     01072009 MSFT 00010013)
+[    0.008925] ACPI: DMAR 0x000000008A623148 0000EC (v01 INTEL  KBL      00000001 INTL 00000001)
+[    0.008931] ACPI: Local APIC address 0xfee00000
+[    0.009193] No NUMA configuration found
+[    0.009193] Faking a node at [mem 0x0000000000000000-0x000000026f7fffff]
+[    0.009200] NODE_DATA(0) allocated [mem 0x26f7d5000-0x26f7fffff]
+[    0.009331] Zone ranges:
+[    0.009332]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.009333]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.009333]   Normal   [mem 0x0000000100000000-0x000000026f7fffff]
+[    0.009334]   Device   empty
+[    0.009334] Movable zone start for each node
+[    0.009337] Early memory node ranges
+[    0.009337]   node   0: [mem 0x0000000000001000-0x000000000008ffff]
+[    0.009338]   node   0: [mem 0x0000000000100000-0x000000007ae4cfff]
+[    0.009338]   node   0: [mem 0x0000000100000000-0x000000026f7fffff]
+[    0.009487] Zeroed struct page in unavailable ranges: 21028 pages
+[    0.009488] Initmem setup node 0 [mem 0x0000000000001000-0x000000026f7fffff]
+[    0.009489] On node 0 totalpages: 2008540
+[    0.009489]   DMA zone: 64 pages used for memmap
+[    0.009490]   DMA zone: 21 pages reserved
+[    0.009490]   DMA zone: 3983 pages, LIFO batch:0
+[    0.009527]   DMA32 zone: 7802 pages used for memmap
+[    0.009528]   DMA32 zone: 499277 pages, LIFO batch:63
+[    0.018759]   Normal zone: 23520 pages used for memmap
+[    0.018759]   Normal zone: 1505280 pages, LIFO batch:63
+[    0.041698] Reserving Intel graphics memory at [mem 0x8d800000-0x8f7fffff]
+[    0.041891] ACPI: PM-Timer IO Port: 0x1808
+[    0.041892] ACPI: Local APIC address 0xfee00000
+[    0.041897] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.041898] ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[    0.041898] ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[    0.041898] ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[    0.041899] ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[    0.041899] ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[    0.041900] ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[    0.041900] ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[    0.041926] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+[    0.041928] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.041929] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.041930] ACPI: IRQ0 used by override.
+[    0.041930] ACPI: IRQ9 used by override.
+[    0.041932] Using ACPI (MADT) for SMP configuration information
+[    0.041933] ACPI: HPET id: 0x8086a701 base: 0xfed00000
+[    0.041935] smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+[    0.041945] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.041946] PM: Registered nosave memory: [mem 0x00090000-0x00090fff]
+[    0.041947] PM: Registered nosave memory: [mem 0x00091000-0x0009ffff]
+[    0.041947] PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+[    0.041947] PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+[    0.041948] PM: Registered nosave memory: [mem 0x7ae4d000-0x7ae4dfff]
+[    0.041949] PM: Registered nosave memory: [mem 0x7ae4e000-0x8a5e3fff]
+[    0.041949] PM: Registered nosave memory: [mem 0x8a5e4000-0x8a624fff]
+[    0.041949] PM: Registered nosave memory: [mem 0x8a625000-0x8af0dfff]
+[    0.041950] PM: Registered nosave memory: [mem 0x8af0e000-0x8f7fffff]
+[    0.041950] PM: Registered nosave memory: [mem 0x8f800000-0xdfffffff]
+[    0.041950] PM: Registered nosave memory: [mem 0xe0000000-0xefffffff]
+[    0.041951] PM: Registered nosave memory: [mem 0xf0000000-0xfdffffff]
+[    0.041951] PM: Registered nosave memory: [mem 0xfe000000-0xfe010fff]
+[    0.041952] PM: Registered nosave memory: [mem 0xfe011000-0xfebfffff]
+[    0.041952] PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[    0.041952] PM: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+[    0.041953] PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[    0.041953] PM: Registered nosave memory: [mem 0xfee01000-0xfeffffff]
+[    0.041953] PM: Registered nosave memory: [mem 0xff000000-0xffffffff]
+[    0.041955] [mem 0x8f800000-0xdfffffff] available for PCI devices
+[    0.041955] Booting paravirtualized kernel on bare hardware
+[    0.041958] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.041962] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[    0.042278] percpu: Embedded 54 pages/cpu s184320 r8192 d28672 u262144
+[    0.042282] pcpu-alloc: s184320 r8192 d28672 u262144 alloc=1*2097152
+[    0.042283] pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+[    0.042300] Built 1 zonelists, mobility grouping on.  Total pages: 1977133
+[    0.042301] Policy zone: Normal
+[    0.042302] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.3.0-40-generic root=UUID=169ff337-6f80-475f-8d0e-283b1c3309c3 ro quiet splash vt.handoff=7
+[    0.043167] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.043583] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.043646] mem auto-init: stack:off, heap alloc:on, heap free:off
+[    0.050826] Calgary: detecting Calgary via BIOS EBDA area
+[    0.050828] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[    0.082660] Memory: 7747132K/8034160K available (14339K kernel code, 2387K rwdata, 4724K rodata, 2668K init, 5056K bss, 287028K reserved, 0K cma-reserved)
+[    0.082799] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.082809] Kernel/User page tables isolation: enabled
+[    0.082822] ftrace: allocating 43186 entries in 169 pages
+[    0.095673] rcu: Hierarchical RCU implementation.
+[    0.095675] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=8.
+[    0.095675] 	Tasks RCU enabled.
+[    0.095676] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.095676] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.097839] NR_IRQS: 524544, nr_irqs: 2048, preallocated irqs: 16
+[    0.098117] random: crng done (trusting CPU's manufacturer)
+[    0.098150] spurious 8259A interrupt: IRQ7.
+[    0.098177] vt handoff: transparent VT on vt#7
+[    0.098183] Console: colour dummy device 80x25
+[    0.098187] printk: console [tty0] enabled
+[    0.098202] ACPI: Core revision 20190703
+[    0.098448] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635855245 ns
+[    0.098555] APIC: Switch to symmetric I/O mode setup
+[    0.098557] DMAR: Host address width 39
+[    0.098558] DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+[    0.098563] DMAR: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 19e2ff0505e
+[    0.098564] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.098567] DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.098567] DMAR: RMRR base: 0x0000008a30f000 end: 0x0000008a32efff
+[    0.098568] DMAR: RMRR base: 0x0000008b055000 end: 0x0000008b29efff
+[    0.098568] DMAR: RMRR base: 0x0000008d000000 end: 0x0000008f7fffff
+[    0.098569] DMAR: ANDD device: 1 name: \_SB.PCI0.I2C0
+[    0.098571] DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[    0.098571] DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[    0.098572] DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[    0.100518] DMAR-IR: Enabled IRQ remapping in x2apic mode
+[    0.100519] x2apic enabled
+[    0.100531] Switched APIC routing to cluster x2apic.
+[    0.104578] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.122391] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x39a8208cdd2, max_idle_ns: 881590748921 ns
+[    0.122395] Calibrating delay loop (skipped), value calculated using timer frequency.. 3999.93 BogoMIPS (lpj=7999872)
+[    0.122396] pid_max: default: 32768 minimum: 301
+[    0.122420] LSM: Security Framework initializing
+[    0.122428] Yama: becoming mindful.
+[    0.122476] AppArmor: AppArmor initialized
+[    0.122526] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.122554] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.122685] *** VALIDATE proc ***
+[    0.122723] *** VALIDATE cgroup1 ***
+[    0.122724] *** VALIDATE cgroup2 ***
+[    0.122776] mce: CPU0: Thermal monitoring enabled (TM1)
+[    0.122795] process: using mwait in idle threads
+[    0.122805] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.122806] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.122808] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.122809] Spectre V2 : Mitigation: Full generic retpoline
+[    0.122810] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.122810] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.122811] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.122811] Spectre V2 : User space: Mitigation: STIBP via seccomp and prctl
+[    0.122812] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+[    0.122814] MDS: Mitigation: Clear CPU buffers
+[    0.122999] Freeing SMP alternatives memory: 36K
+[    0.124938] TSC deadline timer enabled
+[    0.124943] smpboot: CPU0: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz (family: 0x6, model: 0x8e, stepping: 0xa)
+[    0.125030] Performance Events: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+[    0.125034] ... version:                4
+[    0.125034] ... bit width:              48
+[    0.125035] ... generic registers:      4
+[    0.125035] ... value mask:             0000ffffffffffff
+[    0.125035] ... max period:             00007fffffffffff
+[    0.125036] ... fixed-purpose events:   3
+[    0.125036] ... event mask:             000000070000000f
+[    0.125066] rcu: Hierarchical SRCU implementation.
+[    0.125843] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.125923] smp: Bringing up secondary CPUs ...
+[    0.125982] x86: Booting SMP configuration:
+[    0.125982] .... node  #0, CPUs:      #1
+[    0.126392] mce: CPU0: Core temperature above threshold, cpu clock throttled (total events = 1)
+[    0.126392] mce: CPU0: Package temperature above threshold, cpu clock throttled (total events = 1)
+[    0.126392]  #2 #3 #4
+[    0.127963] MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+[    0.127963]  #5 #6 #7
+[    0.130836] smp: Brought up 1 node, 8 CPUs
+[    0.130836] smpboot: Max logical packages: 1
+[    0.130836] smpboot: Total of 8 processors activated (31999.48 BogoMIPS)
+[    0.132886] devtmpfs: initialized
+[    0.132886] x86/mm: Memory block size: 128MB
+[    0.134460] PM: Registering ACPI NVS region [mem 0x7ae4d000-0x7ae4dfff] (4096 bytes)
+[    0.134460] PM: Registering ACPI NVS region [mem 0x8a625000-0x8af0dfff] (9342976 bytes)
+[    0.134522] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.134522] futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    0.134524] pinctrl core: initialized pinctrl subsystem
+[    0.134618] PM: RTC time: 02:27:54, date: 2020-02-23
+[    0.134704] NET: Registered protocol family 16
+[    0.134767] audit: initializing netlink subsys (disabled)
+[    0.134773] audit: type=2000 audit(1582424874.036:1): state=initialized audit_enabled=0 res=1
+[    0.134773] EISA bus registered
+[    0.134773] cpuidle: using governor ladder
+[    0.134773] cpuidle: using governor menu
+[    0.134773] Simple Boot Flag at 0x47 set to 0x80
+[    0.134773] ACPI: bus type PCI registered
+[    0.134773] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.134773] PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+[    0.134773] PCI: MMCONFIG at [mem 0xe0000000-0xefffffff] reserved in E820
+[    0.134773] PCI: Using configuration type 1 for base access
+[    0.134780] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.135043] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.135043] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.135043] ACPI: Added _OSI(Module Device)
+[    0.135043] ACPI: Added _OSI(Processor Device)
+[    0.135043] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.135043] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.135043] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.135043] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.135043] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.138395] mce: CPU0: Core temperature/speed normal
+[    0.138396] mce: CPU0: Package temperature/speed normal
+[    0.170874] ACPI: 11 ACPI AML tables successfully acquired and loaded
+[    0.171115] ACPI Error: No pointer back to namespace node in package 00000000a73961a8 (20190703/dsargs-301)
+[    0.171510] ACPI Error: No pointer back to namespace node in package 000000003cbcb68e (20190703/dsargs-301)
+[    0.171684] ACPI Error: No pointer back to namespace node in package 00000000bb08885d (20190703/dsargs-301)
+[    0.174658] ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+[    0.179791] ACPI: Dynamic OEM Table Load:
+[    0.179791] ACPI: SSDT 0xFFFF97C4A59BB800 0005CD (v02 PmRef  Cpu0Ist  00003000 INTL 20160422)
+[    0.179791] ACPI Error: No pointer back to namespace node in package 00000000a73961a8 (20190703/dsargs-301)
+[    0.179791] ACPI Error: No pointer back to namespace node in package 000000003cbcb68e (20190703/dsargs-301)
+[    0.179791] ACPI Error: No pointer back to namespace node in package 00000000bb08885d (20190703/dsargs-301)
+[    0.179791] ACPI: \_PR_.PR00: _OSC native thermal LVT Acked
+[    0.180643] ACPI: Dynamic OEM Table Load:
+[    0.180646] ACPI: SSDT 0xFFFF97C4A55F1000 0003FF (v02 PmRef  Cpu0Cst  00003001 INTL 20160422)
+[    0.180925] ACPI Error: No pointer back to namespace node in package 00000000a73961a8 (20190703/dsargs-301)
+[    0.182676] ACPI Error: No pointer back to namespace node in package 000000003cbcb68e (20190703/dsargs-301)
+[    0.182745] ACPI Error: No pointer back to namespace node in package 00000000bb08885d (20190703/dsargs-301)
+[    0.183167] ACPI: Dynamic OEM Table Load:
+[    0.183170] ACPI: SSDT 0xFFFF97C4A548D480 0000BA (v02 PmRef  Cpu0Hwp  00003000 INTL 20160422)
+[    0.183404] ACPI Error: No pointer back to namespace node in package 00000000a73961a8 (20190703/dsargs-301)
+[    0.183740] ACPI Error: No pointer back to namespace node in package 000000003cbcb68e (20190703/dsargs-301)
+[    0.183809] ACPI Error: No pointer back to namespace node in package 00000000bb08885d (20190703/dsargs-301)
+[    0.184215] ACPI: Dynamic OEM Table Load:
+[    0.184218] ACPI: SSDT 0xFFFF97C4A59B8000 000628 (v02 PmRef  HwpLvt   00003000 INTL 20160422)
+[    0.184446] ACPI Error: No pointer back to namespace node in package 00000000a73961a8 (20190703/dsargs-301)
+[    0.184775] ACPI Error: No pointer back to namespace node in package 000000003cbcb68e (20190703/dsargs-301)
+[    0.184844] ACPI Error: No pointer back to namespace node in package 00000000bb08885d (20190703/dsargs-301)
+[    0.185577] ACPI: Dynamic OEM Table Load:
+[    0.185582] ACPI: SSDT 0xFFFF97C4A5A08000 000D14 (v02 PmRef  ApIst    00003000 INTL 20160422)
+[    0.186433] ACPI Error: No pointer back to namespace node in package 00000000a73961a8 (20190703/dsargs-301)
+[    0.186764] ACPI Error: No pointer back to namespace node in package 000000003cbcb68e (20190703/dsargs-301)
+[    0.186836] ACPI Error: No pointer back to namespace node in package 00000000bb08885d (20190703/dsargs-301)
+[    0.187272] ACPI: Dynamic OEM Table Load:
+[    0.187276] ACPI: SSDT 0xFFFF97C4A55F3800 000317 (v02 PmRef  ApHwp    00003000 INTL 20160422)
+[    0.187573] ACPI Error: No pointer back to namespace node in package 00000000a73961a8 (20190703/dsargs-301)
+[    0.187900] ACPI Error: No pointer back to namespace node in package 000000003cbcb68e (20190703/dsargs-301)
+[    0.187968] ACPI Error: No pointer back to namespace node in package 00000000bb08885d (20190703/dsargs-301)
+[    0.188406] ACPI: Dynamic OEM Table Load:
+[    0.188409] ACPI: SSDT 0xFFFF97C4A55F6000 00030A (v02 PmRef  ApCst    00003000 INTL 20160422)
+[    0.188710] ACPI Error: No pointer back to namespace node in package 00000000a73961a8 (20190703/dsargs-301)
+[    0.189042] ACPI Error: No pointer back to namespace node in package 000000003cbcb68e (20190703/dsargs-301)
+[    0.189112] ACPI Error: No pointer back to namespace node in package 00000000bb08885d (20190703/dsargs-301)
+[    0.191734] ACPI: EC: EC started
+[    0.191734] ACPI: EC: interrupt blocked
+[    0.198151] ACPI: \_SB_.PCI0.LPCB.ECDV: Used as first EC
+[    0.198152] ACPI: \_SB_.PCI0.LPCB.ECDV: GPE=0x6e, EC_CMD/EC_SC=0x934, EC_DATA=0x930
+[    0.198153] ACPI: \_SB_.PCI0.LPCB.ECDV: Boot DSDT EC used to handle transactions
+[    0.198153] ACPI: Interpreter enabled
+[    0.198186] ACPI: (supports S0 S3 S4 S5)
+[    0.198187] ACPI: Using IOAPIC for interrupt routing
+[    0.198215] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.198796] ACPI: Enabled 7 GPEs in block 00 to 7F
+[    0.222655] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-fe])
+[    0.222660] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    0.224452] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR]
+[    0.225150] PCI host bridge to bus 0000:00
+[    0.225151] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.225152] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.225153] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.225154] pci_bus 0000:00: root bus resource [mem 0x8f800000-0xdfffffff window]
+[    0.225154] pci_bus 0000:00: root bus resource [mem 0xfd000000-0xfe7fffff window]
+[    0.225155] pci_bus 0000:00: root bus resource [bus 00-fe]
+[    0.225162] pci 0000:00:00.0: [8086:5914] type 00 class 0x060000
+[    0.225271] pci 0000:00:02.0: [8086:5917] type 00 class 0x030000
+[    0.225280] pci 0000:00:02.0: reg 0x10: [mem 0xd0000000-0xd0ffffff 64bit]
+[    0.225285] pci 0000:00:02.0: reg 0x18: [mem 0xc0000000-0xcfffffff 64bit pref]
+[    0.225291] pci 0000:00:02.0: reg 0x20: [io  0xf000-0xf03f]
+[    0.225415] pci 0000:00:04.0: [8086:1903] type 00 class 0x118000
+[    0.225427] pci 0000:00:04.0: reg 0x10: [mem 0xd1320000-0xd1327fff 64bit]
+[    0.225622] pci 0000:00:14.0: [8086:9d2f] type 00 class 0x0c0330
+[    0.225644] pci 0000:00:14.0: reg 0x10: [mem 0xd1310000-0xd131ffff 64bit]
+[    0.225710] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.225892] pci 0000:00:14.2: [8086:9d31] type 00 class 0x118000
+[    0.225913] pci 0000:00:14.2: reg 0x10: [mem 0xd1337000-0xd1337fff 64bit]
+[    0.226159] pci 0000:00:15.0: [8086:9d60] type 00 class 0x118000
+[    0.226406] pci 0000:00:15.0: reg 0x10: [mem 0xd1336000-0xd1336fff 64bit]
+[    0.227379] pci 0000:00:16.0: [8086:9d3a] type 00 class 0x078000
+[    0.227405] pci 0000:00:16.0: reg 0x10: [mem 0xd1335000-0xd1335fff 64bit]
+[    0.227479] pci 0000:00:16.0: PME# supported from D3hot
+[    0.227632] pci 0000:00:17.0: [8086:282a] type 00 class 0x010400
+[    0.227650] pci 0000:00:17.0: reg 0x10: [mem 0xd1330000-0xd1331fff]
+[    0.227657] pci 0000:00:17.0: reg 0x14: [mem 0xd1334000-0xd13340ff]
+[    0.227664] pci 0000:00:17.0: reg 0x18: [io  0xf090-0xf097]
+[    0.227671] pci 0000:00:17.0: reg 0x1c: [io  0xf080-0xf083]
+[    0.227678] pci 0000:00:17.0: reg 0x20: [io  0xf060-0xf07f]
+[    0.227685] pci 0000:00:17.0: reg 0x24: [mem 0xd1333000-0xd13337ff]
+[    0.227726] pci 0000:00:17.0: PME# supported from D3hot
+[    0.227872] pci 0000:00:1c.0: [8086:9d14] type 01 class 0x060400
+[    0.227951] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.228119] pci 0000:00:1c.5: [8086:9d15] type 01 class 0x060400
+[    0.228196] pci 0000:00:1c.5: PME# supported from D0 D3hot D3cold
+[    0.228360] pci 0000:00:1f.0: [8086:9d4e] type 00 class 0x060100
+[    0.228541] pci 0000:00:1f.2: [8086:9d21] type 00 class 0x058000
+[    0.228556] pci 0000:00:1f.2: reg 0x10: [mem 0xd132c000-0xd132ffff]
+[    0.228717] pci 0000:00:1f.3: [8086:9d71] type 00 class 0x040300
+[    0.228745] pci 0000:00:1f.3: reg 0x10: [mem 0xd1328000-0xd132bfff 64bit]
+[    0.228777] pci 0000:00:1f.3: reg 0x20: [mem 0xd1300000-0xd130ffff 64bit]
+[    0.228826] pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[    0.229021] pci 0000:00:1f.4: [8086:9d23] type 00 class 0x0c0500
+[    0.229082] pci 0000:00:1f.4: reg 0x10: [mem 0xd1332000-0xd13320ff 64bit]
+[    0.229152] pci 0000:00:1f.4: reg 0x20: [io  0xf040-0xf05f]
+[    0.229400] pci 0000:01:00.0: [10ec:8136] type 00 class 0x020000
+[    0.229438] pci 0000:01:00.0: reg 0x10: [io  0xe000-0xe0ff]
+[    0.229468] pci 0000:01:00.0: reg 0x18: [mem 0xd1204000-0xd1204fff 64bit]
+[    0.229488] pci 0000:01:00.0: reg 0x20: [mem 0xd1200000-0xd1203fff 64bit pref]
+[    0.229598] pci 0000:01:00.0: supports D1 D2
+[    0.229599] pci 0000:01:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.229757] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.229760] pci 0000:00:1c.0:   bridge window [io  0xe000-0xefff]
+[    0.229762] pci 0000:00:1c.0:   bridge window [mem 0xd1200000-0xd12fffff]
+[    0.229974] pci 0000:02:00.0: [168c:0042] type 00 class 0x028000
+[    0.230040] pci 0000:02:00.0: reg 0x10: [mem 0xd1000000-0xd11fffff 64bit]
+[    0.230289] pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+[    0.230593] pci 0000:00:1c.5: PCI bridge to [bus 02]
+[    0.230596] pci 0000:00:1c.5:   bridge window [mem 0xd1000000-0xd11fffff]
+[    0.232319] ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 *10 11 12 14 15)
+[    0.232369] ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 *10 11 12 14 15)
+[    0.232416] ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.232463] ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.232510] ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.232558] ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.232605] ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.232653] ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
+[    0.236666] ACPI: EC: interrupt unblocked
+[    0.236666] ACPI: EC: event unblocked
+[    0.236666] ACPI: \_SB_.PCI0.LPCB.ECDV: GPE=0x6e, EC_CMD/EC_SC=0x934, EC_DATA=0x930
+[    0.236666] ACPI: \_SB_.PCI0.LPCB.ECDV: Boot DSDT EC used to handle transactions and events
+[    0.236667] SCSI subsystem initialized
+[    0.236667] libata version 3.00 loaded.
+[    0.236667] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.236667] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.236667] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.236667] vgaarb: loaded
+[    0.236667] ACPI: bus type USB registered
+[    0.236667] usbcore: registered new interface driver usbfs
+[    0.236667] usbcore: registered new interface driver hub
+[    0.236667] usbcore: registered new device driver usb
+[    0.236667] pps_core: LinuxPPS API ver. 1 registered
+[    0.236667] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.236667] PTP clock support registered
+[    0.236667] EDAC MC: Ver: 3.0.0
+[    0.236667] PCI: Using ACPI for IRQ routing
+[    0.267599] PCI: pci_cache_line_size set to 64 bytes
+[    0.267957] e820: reserve RAM buffer [mem 0x00090400-0x0009ffff]
+[    0.267958] e820: reserve RAM buffer [mem 0x7ae4d000-0x7bffffff]
+[    0.267958] e820: reserve RAM buffer [mem 0x26f800000-0x26fffffff]
+[    0.268028] NetLabel: Initializing
+[    0.268029] NetLabel:  domain hash size = 128
+[    0.268029] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.268038] NetLabel:  unlabeled traffic allowed by default
+[    0.268046] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+[    0.268046] hpet0: 8 comparators, 64-bit 24.000000 MHz counter
+[    0.270408] clocksource: Switched to clocksource tsc-early
+[    0.278674] VFS: Disk quotas dquot_6.6.0
+[    0.278687] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.278707] *** VALIDATE hugetlbfs ***
+[    0.278763] AppArmor: AppArmor Filesystem Enabled
+[    0.278787] pnp: PnP ACPI init
+[    0.279055] system 00:00: [io  0x0680-0x069f] has been reserved
+[    0.279057] system 00:00: [io  0xffff] has been reserved
+[    0.279057] system 00:00: [io  0xffff] has been reserved
+[    0.279058] system 00:00: [io  0xffff] has been reserved
+[    0.279059] system 00:00: [io  0x1800-0x18fe] has been reserved
+[    0.279060] system 00:00: [io  0x164e-0x164f] has been reserved
+[    0.279063] system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.279142] pnp 00:01: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.279171] system 00:02: [io  0x1854-0x1857] has been reserved
+[    0.279173] system 00:02: Plug and Play ACPI device, IDs INT3f0d PNP0c02 (active)
+[    0.279586] pnp 00:03: Plug and Play ACPI device, IDs PNP0303 (active)
+[    0.279597] pnp 00:04: Plug and Play ACPI device, IDs DLL0810 PNP0f13 (active)
+[    0.279791] system 00:05: [mem 0xfed10000-0xfed17fff] has been reserved
+[    0.279792] system 00:05: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.279793] system 00:05: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.279793] system 00:05: [mem 0xe0000000-0xefffffff] has been reserved
+[    0.279794] system 00:05: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.279795] system 00:05: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    0.279796] system 00:05: [mem 0xfed45000-0xfed8ffff] has been reserved
+[    0.279796] system 00:05: [mem 0xff000000-0xffffffff] has been reserved
+[    0.279797] system 00:05: [mem 0xfee00000-0xfeefffff] could not be reserved
+[    0.279798] system 00:05: [mem 0xdffe0000-0xdfffffff] has been reserved
+[    0.279800] system 00:05: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.279831] system 00:06: [mem 0xfd000000-0xfdabffff] has been reserved
+[    0.279832] system 00:06: [mem 0xfdad0000-0xfdadffff] has been reserved
+[    0.279832] system 00:06: [mem 0xfdb00000-0xfdffffff] has been reserved
+[    0.279833] system 00:06: [mem 0xfe000000-0xfe01ffff] could not be reserved
+[    0.279834] system 00:06: [mem 0xfe036000-0xfe03bfff] has been reserved
+[    0.279835] system 00:06: [mem 0xfe03d000-0xfe3fffff] has been reserved
+[    0.279835] system 00:06: [mem 0xfe410000-0xfe7fffff] has been reserved
+[    0.279837] system 00:06: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.280076] system 00:07: [io  0xff00-0xfffe] has been reserved
+[    0.280078] system 00:07: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.281021] system 00:08: [mem 0xfe029000-0xfe029fff] has been reserved
+[    0.281022] system 00:08: [mem 0xfe028000-0xfe028fff] has been reserved
+[    0.281024] system 00:08: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.284447] pnp: PnP ACPI: found 9 devices
+[    0.285262] thermal_sys: Registered thermal governor 'fair_share'
+[    0.285263] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.285263] thermal_sys: Registered thermal governor 'step_wise'
+[    0.285263] thermal_sys: Registered thermal governor 'user_space'
+[    0.285264] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.289751] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.289774] pci 0000:00:1c.0: PCI bridge to [bus 01]
+[    0.289776] pci 0000:00:1c.0:   bridge window [io  0xe000-0xefff]
+[    0.289779] pci 0000:00:1c.0:   bridge window [mem 0xd1200000-0xd12fffff]
+[    0.289784] pci 0000:00:1c.5: PCI bridge to [bus 02]
+[    0.289786] pci 0000:00:1c.5:   bridge window [mem 0xd1000000-0xd11fffff]
+[    0.289792] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.289793] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.289794] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.289794] pci_bus 0000:00: resource 7 [mem 0x8f800000-0xdfffffff window]
+[    0.289795] pci_bus 0000:00: resource 8 [mem 0xfd000000-0xfe7fffff window]
+[    0.289796] pci_bus 0000:01: resource 0 [io  0xe000-0xefff]
+[    0.289796] pci_bus 0000:01: resource 1 [mem 0xd1200000-0xd12fffff]
+[    0.289797] pci_bus 0000:02: resource 1 [mem 0xd1000000-0xd11fffff]
+[    0.289913] NET: Registered protocol family 2
+[    0.290007] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.290060] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.290196] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    0.290251] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.290311] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.290332] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.290391] NET: Registered protocol family 1
+[    0.290401] NET: Registered protocol family 44
+[    0.290408] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.291466] PCI: CLS 0 bytes, default 64
+[    0.291494] Trying to unpack rootfs image as initramfs...
+[    0.393940] Freeing initrd memory: 46788K
+[    0.394014] DMAR: ACPI device "device:6a" under DMAR at fed91000 as 00:15.0
+[    0.418459] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.418466] software IO TLB: mapped [mem 0x76e4d000-0x7ae4d000] (64MB)
+[    0.418851] check: Scanning for low memory corruption every 60 seconds
+[    0.421475] Initialise system trusted keyrings
+[    0.421483] Key type blacklist registered
+[    0.421515] workingset: timestamp_bits=36 max_order=21 bucket_order=0
+[    0.423161] zbud: loaded
+[    0.423627] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.423815] fuse: init (API version 7.31)
+[    0.423993] Platform Keyring initialized
+[    0.430206] Key type asymmetric registered
+[    0.430207] Asymmetric key parser 'x509' registered
+[    0.430215] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[    0.430265] io scheduler mq-deadline registered
+[    0.430738] pcieport 0000:00:1c.0: PME: Signaling with IRQ 122
+[    0.430798] pcieport 0000:00:1c.0: AER: enabled with IRQ 122
+[    0.431079] pcieport 0000:00:1c.5: PME: Signaling with IRQ 123
+[    0.431131] pcieport 0000:00:1c.5: AER: enabled with IRQ 123
+[    0.431208] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.431274] vesafb: mode is 1920x1080x32, linelength=7680, pages=0
+[    0.431274] vesafb: scrolling: redraw
+[    0.431276] vesafb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    0.431306] vesafb: framebuffer at 0xc0000000, mapped to 0x00000000290a82ff, using 8128k, total 8128k
+[    0.431345] fbcon: Deferring console take-over
+[    0.431346] fb0: VESA VGA frame buffer device
+[    0.431362] intel_idle: MWAIT substates: 0x11142120
+[    0.431363] intel_idle: v0.4.1 model 0x8E
+[    0.431893] intel_idle: lapic_timer_reliable_states 0xffffffff
+[    0.433288] ACPI: AC Adapter [AC] (on-line)
+[    0.433372] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0
+[    0.433386] ACPI: Lid Switch [LID0]
+[    0.433420] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+[    0.433428] ACPI: Power Button [PBTN]
+[    0.433466] input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2
+[    0.433474] ACPI: Sleep Button [SBTN]
+[    0.433507] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+[    0.433514] ACPI: Power Button [PWRF]
+[    0.436983] thermal LNXTHERM:00: registered as thermal_zone0
+[    0.436983] ACPI: Thermal Zone [THM] (25 C)
+[    0.437112] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.444551] Linux agpgart interface v0.103
+[    0.450101] loop: module loaded
+[    0.450235] libphy: Fixed MDIO Bus: probed
+[    0.450235] tun: Universal TUN/TAP device driver, 1.6
+[    0.450249] PPP generic driver version 2.4.2
+[    0.450708] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.450709] ehci-pci: EHCI PCI platform driver
+[    0.450714] ehci-platform: EHCI generic platform driver
+[    0.450719] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.450720] ohci-pci: OHCI PCI platform driver
+[    0.450724] ohci-platform: OHCI generic platform driver
+[    0.450728] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.451507] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.451511] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+[    0.452855] xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x100 quirks 0x0000000081109810
+[    0.452859] xhci_hcd 0000:00:14.0: cache line size of 64 is not supported
+[    0.453508] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.03
+[    0.453509] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.453510] usb usb1: Product: xHCI Host Controller
+[    0.453510] usb usb1: Manufacturer: Linux 5.3.0-40-generic xhci-hcd
+[    0.453511] usb usb1: SerialNumber: 0000:00:14.0
+[    0.454080] hub 1-0:1.0: USB hub found
+[    0.454093] hub 1-0:1.0: 12 ports detected
+[    0.461508] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.461510] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    0.461512] xhci_hcd 0000:00:14.0: Host supports USB 3.0 SuperSpeed
+[    0.461536] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.03
+[    0.461537] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.461537] usb usb2: Product: xHCI Host Controller
+[    0.461538] usb usb2: Manufacturer: Linux 5.3.0-40-generic xhci-hcd
+[    0.461538] usb usb2: SerialNumber: 0000:00:14.0
+[    0.461687] hub 2-0:1.0: USB hub found
+[    0.461700] hub 2-0:1.0: 6 ports detected
+[    0.465795] usb: port power management may be unreliable
+[    0.466667] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+[    0.466670] battery: ACPI: Battery Slot [BAT0] (battery present)
+[    0.467011] i8042: Warning: Keylock active
+[    0.468349] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.468351] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.468507] mousedev: PS/2 mouse device common for all mice
+[    0.468755] rtc_cmos 00:01: RTC can wake from S4
+[    0.469455] rtc_cmos 00:01: registered as rtc0
+[    0.469463] rtc_cmos 00:01: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+[    0.469466] i2c /dev entries driver
+[    0.469509] device-mapper: uevent: version 1.0.3
+[    0.469555] device-mapper: ioctl: 4.40.0-ioctl (2019-01-18) initialised: dm-devel@redhat.com
+[    0.469566] platform eisa.0: Probing EISA bus 0
+[    0.469567] platform eisa.0: EISA: Cannot allocate resource for mainboard
+[    0.469568] platform eisa.0: Cannot allocate resource for EISA slot 1
+[    0.469568] platform eisa.0: Cannot allocate resource for EISA slot 2
+[    0.469569] platform eisa.0: Cannot allocate resource for EISA slot 3
+[    0.469569] platform eisa.0: Cannot allocate resource for EISA slot 4
+[    0.469570] platform eisa.0: Cannot allocate resource for EISA slot 5
+[    0.469570] platform eisa.0: Cannot allocate resource for EISA slot 6
+[    0.469571] platform eisa.0: Cannot allocate resource for EISA slot 7
+[    0.469571] platform eisa.0: Cannot allocate resource for EISA slot 8
+[    0.469572] platform eisa.0: EISA: Detected 0 cards
+[    0.469574] intel_pstate: Intel P-state driver initializing
+[    0.469795] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input4
+[    0.470172] intel_pstate: HWP enabled
+[    0.470273] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.470300] intel_pmc_core INT33A1:00:  initialized
+[    0.470472] NET: Registered protocol family 10
+[    0.477525] Segment Routing with IPv6
+[    0.477538] NET: Registered protocol family 17
+[    0.477741] Key type dns_resolver registered
+[    0.478417] RAS: Correctable Errors collector initialized.
+[    0.478436] microcode: sig=0x806ea, pf=0x80, revision=0xca
+[    0.478727] microcode: Microcode Update Driver: v2.2.
+[    0.478736] sched_clock: Marking stable (478402329, 322465)->(481627087, -2902293)
+[    0.478996] registered taskstats version 1
+[    0.479003] Loading compiled-in X.509 certificates
+[    0.480397] Loaded X.509 cert 'Build time autogenerated kernel key: 9c21ebfd2d85db5aed45c3b325f02e1590559b94'
+[    0.480425] zswap: loaded using pool lzo/zbud
+[    0.486613] Key type big_key registered
+[    0.489563] Key type encrypted registered
+[    0.489580] AppArmor: AppArmor sha1 policy hashing enabled
+[    0.489589] ima: No TPM chip found, activating TPM-bypass!
+[    0.489593] ima: Allocated hash algorithm: sha1
+[    0.489598] No architecture policies found
+[    0.489602] evm: Initialising EVM extended attributes:
+[    0.489602] evm: security.selinux
+[    0.489603] evm: security.SMACK64
+[    0.489603] evm: security.SMACK64EXEC
+[    0.489603] evm: security.SMACK64TRANSMUTE
+[    0.489603] evm: security.SMACK64MMAP
+[    0.489604] evm: security.apparmor
+[    0.489604] evm: security.ima
+[    0.489604] evm: security.capability
+[    0.489605] evm: HMAC attrs: 0x1
+[    0.490327] PM:   Magic number: 8:837:460
+[    0.510430] rtc_cmos 00:01: setting system clock to 2020-02-23T02:27:55 UTC (1582424875)
+[    0.511500] Freeing unused decrypted memory: 2040K
+[    0.511946] Freeing unused kernel image memory: 2668K
+[    0.574811] Write protecting the kernel read-only data: 22528k
+[    0.575332] Freeing unused kernel image memory: 2008K
+[    0.575745] Freeing unused kernel image memory: 1420K
+[    0.582269] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.582270] x86/mm: Checking user space page tables
+[    0.588548] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.588550] Run /init as init process
+[    0.649288] hidraw: raw HID events driver (C) Jiri Kosina
+[    0.651218] i801_smbus 0000:00:1f.4: SPD Write Disable is set
+[    0.651255] i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+[    0.651548] intel-lpss 0000:00:15.0: enabling device (0000 -> 0002)
+[    0.651983] ahci 0000:00:17.0: version 3.0
+[    0.652469] ahci 0000:00:17.0: SSS flag set, parallel bus scan disabled
+[    0.652496] ahci 0000:00:17.0: AHCI 0001.0301 32 slots 3 ports 6 Gbps 0x7 impl RAID mode
+[    0.652498] ahci 0000:00:17.0: flags: 64bit ncq stag pm led clo only pio slum part deso sadm sds apst 
+[    0.653421] wmi_bus wmi_bus-PNP0C14:00: WQBC data block query control method not found
+[    0.656064] scsi host0: ahci
+[    0.656147] scsi host1: ahci
+[    0.656203] scsi host2: ahci
+[    0.656237] ata1: SATA max UDMA/133 abar m2048@0xd1333000 port 0xd1333100 irq 125
+[    0.656239] ata2: SATA max UDMA/133 abar m2048@0xd1333000 port 0xd1333180 irq 125
+[    0.656240] ata3: SATA max UDMA/133 abar m2048@0xd1333000 port 0xd1333200 irq 125
+[    0.656441] libphy: r8169: probed
+[    0.656583] r8169 0000:01:00.0 eth0: RTL8106e, d0:94:66:ee:c2:6e, XID 449, IRQ 126
+[    0.666917] r8169 0000:01:00.0 enp1s0: renamed from eth0
+[    0.695569] i2c_hid i2c-DELL0810:00: i2c-DELL0810:00 supply vdd not found, using dummy regulator
+[    0.695578] i2c_hid i2c-DELL0810:00: i2c-DELL0810:00 supply vddl not found, using dummy regulator
+[    0.794816] usb 1-5: new high-speed USB device number 2 using xhci_hcd
+[    0.953059] usb 1-5: New USB device found, idVendor=1bcf, idProduct=28c1, bcdDevice=65.05
+[    0.953060] usb 1-5: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    0.953061] usb 1-5: Product: Integrated_Webcam_HD
+[    0.953061] usb 1-5: Manufacturer: CN0WNTY0LOG0081MD7PLA01
+[    0.970826] ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[    0.981741] ata1.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[    0.981743] ata1.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[    0.981744] ata1.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    1.019730] ata1.00: ATA-10: ST1000LM035-1RK172, SDM2, max UDMA/133
+[    1.019731] ata1.00: 1953525168 sectors, multi 16: LBA48 NCQ (depth 32), AA
+[    1.043586] ata1.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[    1.043588] ata1.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[    1.043589] ata1.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    1.081370] ata1.00: configured for UDMA/133
+[    1.081569] scsi 0:0:0:0: Direct-Access     ATA      ST1000LM035-1RK1 SDM2 PQ: 0 ANSI: 5
+[    1.081898] sd 0:0:0:0: [sda] 1953525168 512-byte logical blocks: (1.00 TB/932 GiB)
+[    1.081899] sd 0:0:0:0: [sda] 4096-byte physical blocks
+[    1.081903] sd 0:0:0:0: [sda] Write Protect is off
+[    1.081904] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.081910] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.081913] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.082411] usb 1-6: new high-speed USB device number 3 using xhci_hcd
+[    1.156210]  sda: sda1 sda2
+[    1.156650] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.231318] usb 1-6: New USB device found, idVendor=0bda, idProduct=0129, bcdDevice=39.60
+[    1.231319] usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    1.231320] usb 1-6: Product: USB2.0-CRW
+[    1.231321] usb 1-6: Manufacturer: Generic
+[    1.231321] usb 1-6: SerialNumber: 20100201396000000
+[    1.358452] usb 1-7: new full-speed USB device number 4 using xhci_hcd
+[    1.406808] ata2: SATA link down (SStatus 4 SControl 300)
+[    1.442621] tsc: Refined TSC clocksource calibration: 1991.999 MHz
+[    1.442628] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x396d4ffc055, max_idle_ns: 881590662783 ns
+[    1.442682] clocksource: Switched to clocksource tsc
+[    1.509741] usb 1-7: config 1 interface 1 altsetting 0 endpoint 0x83 has wMaxPacketSize 0, skipping
+[    1.509742] usb 1-7: config 1 interface 1 altsetting 0 endpoint 0x3 has wMaxPacketSize 0, skipping
+[    1.509745] usb 1-7: New USB device found, idVendor=0cf3, idProduct=e009, bcdDevice= 0.01
+[    1.509745] usb 1-7: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    1.610365] input: AlpsPS/2 ALPS GlidePoint as /devices/platform/i8042/serio1/input/input6
+[    1.638815] usb 1-9: new full-speed USB device number 5 using xhci_hcd
+[    1.721719] ata3: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[    1.724100] ata3.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[    1.724102] ata3.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[    1.724103] ata3.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    1.725125] ata3.00: ATA-10: SK hynix SC311 SATA 128GB, 70000P10, max UDMA/133
+[    1.725127] ata3.00: 250069680 sectors, multi 16: LBA48 NCQ (depth 32), AA
+[    1.727289] ata3.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+[    1.727291] ata3.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+[    1.727292] ata3.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    1.729021] ata3.00: configured for UDMA/133
+[    1.729273] scsi 2:0:0:0: Direct-Access     ATA      SK hynix SC311 S 0P10 PQ: 0 ANSI: 5
+[    1.729591] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[    1.729952] sd 2:0:0:0: [sdb] 250069680 512-byte logical blocks: (128 GB/119 GiB)
+[    1.729953] sd 2:0:0:0: [sdb] 4096-byte physical blocks
+[    1.729962] sd 2:0:0:0: [sdb] Write Protect is off
+[    1.729963] sd 2:0:0:0: [sdb] Mode Sense: 00 3a 00 00
+[    1.730066] sd 2:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.732165]  sdb: sdb1 sdb2 sdb3 sdb4 sdb5 sdb6 sdb7 sdb8
+[    1.733076] sd 2:0:0:0: [sdb] Attached SCSI disk
+[    1.736058] input: DELL0810:00 044E:120A Mouse as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-DELL0810:00/0018:044E:120A.0001/input/input7
+[    1.736110] input: DELL0810:00 044E:120A Touchpad as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-DELL0810:00/0018:044E:120A.0001/input/input8
+[    1.736148] input: DELL0810:00 044E:120A as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-DELL0810:00/0018:044E:120A.0001/input/input9
+[    1.736178] hid-generic 0018:044E:120A.0001: input,hidraw0: I2C HID v1.00 Mouse [DELL0810:00 044E:120A] on i2c-DELL0810:00
+[    1.797280] usb 1-9: New USB device found, idVendor=27c6, idProduct=5301, bcdDevice= 1.00
+[    1.797281] usb 1-9: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    1.797282] usb 1-9: Product: Goodix Fingerprint Device 
+[    1.797283] usb 1-9: Manufacturer: HTMicroelectronics
+[    1.797283] usb 1-9: SerialNumber: HTK32
+[    1.803107] usbcore: registered new interface driver rtsx_usb
+[    2.661550] fbcon: Taking over console
+[    2.661621] Console: switching to colour frame buffer device 240x67
+[    7.957129] EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+[    9.862257] systemd[1]: Inserted module 'autofs4'
+[   10.177275] systemd[1]: systemd 242 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[   10.194923] systemd[1]: Detected architecture x86-64.
+[   10.198262] systemd[1]: Set hostname to <alisha-Inspiron-5570>.
+[   10.208367] systemd[1]: Failed to bump fs.file-max, ignoring: Invalid argument
+[   11.893824] systemd[1]: /lib/systemd/system/dbus.socket:4: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+[   12.331250] systemd[1]: Listening on Journal Audit Socket.
+[   12.331301] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   12.331309] systemd[1]: Reached target Remote File Systems.
+[   12.371300] systemd[1]: Listening on udev Kernel Socket.
+[   12.371418] systemd[1]: Listening on Journal Socket.
+[   12.490979] EXT4-fs (sda2): re-mounted. Opts: errors=remount-ro
+[   12.703831] lp: driver loaded but no devices found
+[   12.706871] ppdev: user-space parallel port driver
+[   12.890448] Adding 2097148k swap on /swapfile.  Priority:-2 extents:6 across:2260988k FS
+[   13.061481] systemd-journald[360]: Received request to flush runtime journal from PID 1
+[   13.515007] systemd-journald[360]: File /var/log/journal/d4770bc2517c49e18fdcfee1c1b76e55/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   15.817315] audit: type=1400 audit(1582424890.804:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=428 comm="apparmor_parser"
+[   15.817318] audit: type=1400 audit(1582424890.804:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=428 comm="apparmor_parser"
+[   15.906536] audit: type=1400 audit(1582424890.892:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-xpdfimport" pid=434 comm="apparmor_parser"
+[   15.910245] audit: type=1400 audit(1582424890.892:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=429 comm="apparmor_parser"
+[   15.913312] audit: type=1400 audit(1582424890.896:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-oopslash" pid=437 comm="apparmor_parser"
+[   15.915589] audit: type=1400 audit(1582424890.900:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=436 comm="apparmor_parser"
+[   15.926609] audit: type=1400 audit(1582424890.912:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=432 comm="apparmor_parser"
+[   15.926618] audit: type=1400 audit(1582424890.912:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cupsd" pid=432 comm="apparmor_parser"
+[   15.926622] audit: type=1400 audit(1582424890.912:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cupsd//third_party" pid=432 comm="apparmor_parser"
+[   15.930312] audit: type=1400 audit(1582424890.912:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=427 comm="apparmor_parser"
+[   17.429756] input: Intel HID events as /devices/platform/INT33D5:00/input/input10
+[   17.429864] intel-hid INT33D5:00: platform supports 5 button array
+[   17.429895] input: Intel HID 5 button array as /devices/platform/INT33D5:00/input/input11
+[   17.517451] ACPI Warning: \_SB.IETM._TRT: Return Package has no elements (empty) (20190703/nsprepkg-94)
+[   17.526785] input: Dell WMI hotkeys as /devices/platform/PNP0C14:00/wmi_bus/wmi_bus-PNP0C14:00/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input12
+[   18.131641] RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 655360 ms ovfl timer
+[   18.131642] RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+[   18.131642] RAPL PMU: hw unit of domain package 2^-14 Joules
+[   18.131642] RAPL PMU: hw unit of domain dram 2^-14 Joules
+[   18.131643] RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+[   18.131643] RAPL PMU: hw unit of domain psys 2^-14 Joules
+[   18.451118] cryptd: max_cpu_qlen set to 1000
+[   18.684670] AVX2 version of gcm_enc/dec engaged.
+[   18.684671] AES CTR mode by8 optimization enabled
+[   18.868759] intel_rapl_common: Found RAPL domain package
+[   18.868760] intel_rapl_common: Found RAPL domain core
+[   18.868760] intel_rapl_common: Found RAPL domain uncore
+[   18.868761] intel_rapl_common: Found RAPL domain dram
+[   18.869115] ACPI Error: No pointer back to namespace node in package 00000000a73961a8 (20190703/dsargs-301)
+[   18.869123] No Local Variables are initialized for Method [PPCC]
+[   18.869124] No Arguments are initialized for method [PPCC]
+[   18.869125] ACPI Error: Aborting method \_SB.PCI0.B0D4.PPCC due to previous error (AE_AML_INTERNAL) (20190703/psparse-529)
+[   18.982490] idma64 idma64.0: Found Intel integrated DMA 64-bit
+[   19.011832] input: DELL0810:00 044E:120A Touchpad as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-DELL0810:00/0018:044E:120A.0001/input/input14
+[   19.011901] hid-multitouch 0018:044E:120A.0001: input,hidraw0: I2C HID v1.00 Mouse [DELL0810:00 044E:120A] on i2c-DELL0810:00
+[   19.046392] cdc_acm 1-9:1.0: ttyACM0: USB ACM device
+[   19.046740] usbcore: registered new interface driver cdc_acm
+[   19.046741] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[   19.362012] mc: Linux media interface: v0.10
+[   19.397108] mei_me 0000:00:16.0: enabling device (0000 -> 0002)
+[   19.436787] videodev: Linux video capture interface: v2.00
+[   19.483813] checking generic (c0000000 7f0000) vs hw (c0000000 10000000)
+[   19.483814] fb0: switching to inteldrmfb from VESA VGA
+[   19.483881] Console: switching to colour dummy device 80x25
+[   19.483908] i915 0000:00:02.0: vgaarb: deactivate vga console
+[   19.484895] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[   19.484896] [drm] Driver supports precise vblank timestamp query.
+[   19.485261] i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[   19.507014] [drm] Initialized i915 1.6.0 20190619 for 0000:00:02.0 on minor 0
+[   19.509049] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[   19.509681] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input16
+[   19.623857] fbcon: i915drmfb (fb0) is primary device
+[   19.623893] Console: switching to colour frame buffer device 240x67
+[   19.623919] i915 0000:00:02.0: fb0: i915drmfb frame buffer device
+[   19.747542] mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+[   20.065123] uvcvideo: Found UVC 1.00 device Integrated_Webcam_HD (1bcf:28c1)
+[   20.077190] Bluetooth: Core ver 2.22
+[   20.077201] NET: Registered protocol family 31
+[   20.077202] Bluetooth: HCI device and connection manager initialized
+[   20.077204] Bluetooth: HCI socket layer initialized
+[   20.077206] Bluetooth: L2CAP socket layer initialized
+[   20.077208] Bluetooth: SCO socket layer initialized
+[   20.086315] uvcvideo 1-5:1.0: Entity type for entity Extension 4 was not initialized!
+[   20.086316] uvcvideo 1-5:1.0: Entity type for entity Extension 3 was not initialized!
+[   20.086317] uvcvideo 1-5:1.0: Entity type for entity Processing 2 was not initialized!
+[   20.086318] uvcvideo 1-5:1.0: Entity type for entity Camera 1 was not initialized!
+[   20.086358] input: Integrated_Webcam_HD: Integrate as /devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/input/input17
+[   20.086403] usbcore: registered new interface driver uvcvideo
+[   20.086404] USB Video Class driver (1.1.1)
+[   20.314506] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   20.316174] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   20.668871] [drm] Finished loading DMC firmware i915/kbl_dmc_ver1_04.bin (v1.4)
+[   20.998215] usbcore: registered new interface driver btusb
+[   21.055071] ath10k_pci 0000:02:00.0: pci irq msi oper_irq_mode 2 irq_mode 0 reset_mode 0
+[   21.164468] snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+[   21.189842] pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+[   21.189849] pcieport 0000:00:1c.5: AER: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+[   21.189852] pcieport 0000:00:1c.5: AER:   device [8086:9d15] error status/mask=00000001/00002000
+[   21.189853] pcieport 0000:00:1c.5: AER:    [ 0] RxErr                 
+[   21.222850] pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+[   21.222857] pcieport 0000:00:1c.5: AER: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+[   21.222858] pcieport 0000:00:1c.5: AER:   device [8086:9d15] error status/mask=00002041/00002000
+[   21.222859] pcieport 0000:00:1c.5: AER:    [ 0] RxErr                 
+[   21.222860] pcieport 0000:00:1c.5: AER:    [ 6] BadTLP                
+[   21.279487] snd_hda_codec_realtek hdaudioC0D0: autoconfig for ALC3246: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+[   21.279488] snd_hda_codec_realtek hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[   21.279489] snd_hda_codec_realtek hdaudioC0D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+[   21.279489] snd_hda_codec_realtek hdaudioC0D0:    mono: mono_out=0x0
+[   21.279490] snd_hda_codec_realtek hdaudioC0D0:    inputs:
+[   21.279490] snd_hda_codec_realtek hdaudioC0D0:      Headset Mic=0x19
+[   21.279491] snd_hda_codec_realtek hdaudioC0D0:      Headphone Mic=0x1a
+[   21.279492] snd_hda_codec_realtek hdaudioC0D0:      Internal Mic=0x12
+[   21.397770] Bluetooth: hci0: using rampatch file: qca/rampatch_usb_00000302.bin
+[   21.397771] Bluetooth: hci0: QCA: patch rome 0x302 build 0x3e8, firmware rome 0x302 build 0x111
+[   21.457982] Bluetooth: hci0: using NVM file: qca/nvm_usb_00000302.bin
+[   21.531734] ath10k_pci 0000:02:00.0: qca9377 hw1.1 target 0x05020001 chip_id 0x003821ff sub 1028:1810
+[   21.531736] ath10k_pci 0000:02:00.0: kconfig debug 0 debugfs 1 tracing 1 dfs 0 testmode 0
+[   21.532089] ath10k_pci 0000:02:00.0: firmware ver WLAN.TF.2.1-00021-QCARMSWP-1 api 6 features wowlan,ignore-otp crc32 42e41877
+[   21.578269] input: HDA Intel PCH Headphone Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input18
+[   21.578305] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input19
+[   21.578332] input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input20
+[   21.578360] input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input21
+[   21.578398] input: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input22
+[   21.578427] input: HDA Intel PCH HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input23
+[   21.681278] ath10k_pci 0000:02:00.0: board_file api 2 bmi_id N/A crc32 8aedfa4a
+[   21.758257] ath10k_pci 0000:02:00.0: unsupported HTC service id: 1536
+[   21.857041] ath10k_pci 0000:02:00.0: htt-ver 3.56 wmi-op 4 htt-op 3 cal otp max-sta 32 raw 0 hwcrypto 1
+[   21.944655] ath: EEPROM regdomain: 0x6c
+[   21.944656] ath: EEPROM indicates we should expect a direct regpair map
+[   21.944657] ath: Country alpha2 being used: 00
+[   21.944657] ath: Regpair used: 0x6c
+[   22.285249] ath10k_pci 0000:02:00.0 wlp2s0: renamed from wlan0
+[   30.363772] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   30.363773] Bluetooth: BNEP filters: protocol multicast
+[   30.363777] Bluetooth: BNEP socket layer initialized
+[   34.817190] Generic PHY r8169-100:00: attached PHY driver [Generic PHY] (mii_bus:phy_addr=r8169-100:00, irq=IGNORE)
+[   35.079320] r8169 0000:01:00.0 enp1s0: Link is Down
+[   35.083288] pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+[   35.083296] pcieport 0000:00:1c.5: AER: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+[   35.083298] pcieport 0000:00:1c.5: AER:   device [8086:9d15] error status/mask=00000001/00002000
+[   35.083299] pcieport 0000:00:1c.5: AER:    [ 0] RxErr                 
+[   35.120470] pcieport 0000:00:1c.5: AER: Multiple Corrected error received: 0000:00:1c.5
+[   35.120487] pcieport 0000:00:1c.5: AER: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+[   35.120495] pcieport 0000:00:1c.5: AER:   device [8086:9d15] error status/mask=00002001/00002000
+[   35.120500] pcieport 0000:00:1c.5: AER:    [ 0] RxErr                 
+[   35.316254] ath10k_pci 0000:02:00.0: unsupported HTC service id: 1536
+[   40.936058] wlp2s0: authenticate with f0:7f:06:95:66:7e
+[   40.981557] wlp2s0: send auth to f0:7f:06:95:66:7e (try 1/3)
+[   40.982282] wlp2s0: authenticated
+[   40.986491] wlp2s0: associate with f0:7f:06:95:66:7e (try 1/3)
+[   40.989932] wlp2s0: RX AssocResp from f0:7f:06:95:66:7e (capab=0x101 status=0 aid=31)
+[   40.993093] wlp2s0: associated
+[   40.993466] ath: EEPROM regdomain: 0x8348
+[   40.993469] ath: EEPROM indicates we should expect a country code
+[   40.993472] ath: doing EEPROM country->regdmn map search
+[   40.993476] ath: country maps to regdmn code: 0x3a
+[   40.993479] ath: Country alpha2 being used: US
+[   40.993481] ath: Regpair used: 0x3a
+[   40.993485] ath: regdomain 0x8348 dynamically updated by country element
+[   40.995390] IPv6: ADDRCONF(NETDEV_CHANGE): wlp2s0: link becomes ready
+[   41.030341] wlp2s0: Limiting TX power to 23 dBm as advertised by f0:7f:06:95:66:7e
+[   51.949938] rfkill: input handler disabled
+[   68.739836] systemd-journald[360]: File /var/log/journal/d4770bc2517c49e18fdcfee1c1b76e55/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+[   68.984918] rfkill: input handler enabled
+[   69.603715] Bluetooth: RFCOMM TTY layer initialized
+[   69.603719] Bluetooth: RFCOMM socket layer initialized
+[   69.603722] Bluetooth: RFCOMM ver 1.11
+[   76.081008] rfkill: input handler disabled
+[  471.644623] rbt530_drv: loading out-of-tree module taints kernel.
+[  471.644715] rbt530_drv: module verification failed: signature and/or required key missing - tainting kernel
+[  471.645786] rbt530 1 driver initialised.
+[  471.645788] rbt530 2 driver initialised.
+[  597.191079] rbprobe driver initialised.
+[  687.896668] 
+               KPROBES is opening 
+[  687.896849] Write function for KPROBE being called
+[  687.896852] Flag value: 1
+[  687.896854] Offset value: 0
+[  687.896856] Function name: rbt530_driver_write
+[  687.947156] return value for registering 0
+[  687.947157] Planted kprobe
+[  687.947164] 
+               KPROBES is closing 
+[  687.947186] 
+               RBT5301 is opening 
+[  687.947188] IOCTL
+[  687.947188]  NO ELEMENTS IN ARRAY
+[  687.947189]  -1 
+[  687.947192] 
+               RBT5301 is closing 
+[  687.947256] 
+               RBT5301 is opening 
+[  687.947274] 
+               RBT5301 is opening 
+[  687.947280] PROBE HIT 
+[  687.947284] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  687.947284] kprobe values: 687954013702  4279 -1059381056
+[  687.947285] In the Post handler function 
+[  687.947285] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  687.947287] Performing write: Key value = 0, Data value = 40
+[  687.947287] Data is being inserted
+[  687.947295] 
+               RBT5301 Name input from read
+[  687.947295] Next element is NULL
+[  687.947296] 
+               RBT5301 is closing 
+[  687.947297] 
+               KPROBES is opening 
+[  687.947297]  -1 
+[  687.947299] 
+               RBT5301 is opening 
+[  687.947300] PROBE HIT 
+[  687.947301] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  687.947302] kprobe values: 687954031671  4279 -1059381056
+[  687.947302] In the Post handler function 
+[  687.947303] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  687.947304] Performing write: Key value = 1, Data value = 41
+[  687.947304] Data is being inserted
+[  687.947309] 
+               RBT5301 is closing 
+[  687.947311] 
+               RBT5301 is opening 
+[  687.947312] PROBE HIT 
+[  687.947313] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  687.947314] kprobe values: 687954043224  4279 -1059381056
+[  687.947314] In the Post handler function 
+[  687.947314] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  687.947315] Performing write: Key value = 2, Data value = 42
+[  687.947315] Data is being inserted
+[  687.947316] 
+               RBT5301 is closing 
+[  687.947321] 
+               RBT5301 is opening 
+[  687.947323] 
+               RBT5301 Name input from read
+[  687.947323] Next element is NULL
+[  687.947323] In the KProbe read
+[  687.947326]  -1 
+[  687.947330] 
+               RBT5301 is closing 
+[  687.947332] 
+               RBT5301 is opening 
+[  687.947333] PROBE HIT 
+[  687.947334] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  687.947335] kprobe values: 687954064236  4279 -1059381056
+[  687.947335] In the Post handler function 
+[  687.947335] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  687.947336] Performing write: Key value = 3, Data value = 43
+[  687.947336] Data is being inserted
+[  687.947352] 
+               KPROBES is closing 
+[  687.947357] 
+               KPROBES is opening 
+[  687.947366] 
+               RBT5301 is closing 
+[  687.947371] 
+               RBT5301 is opening 
+[  687.947372] In the KProbe read
+[  687.947375] 
+               RBT5301 Name input from read
+[  687.947378] Next element is NULL
+[  687.947380]  -1 
+[  687.947381] 
+               RBT5301 is closing 
+[  687.947384] 
+               RBT5301 is opening 
+[  687.947387] PROBE HIT 
+[  687.947390] 
+               KPROBES is closing 
+[  687.947391] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  687.947394] kprobe values: 687954122838  4279 -1059381056
+[  687.947395] 
+               KPROBES is opening 
+[  687.947397] In the Post handler function 
+[  687.947400] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  687.947402] Performing write: Key value = 4, Data value = 44
+[  687.947403] 
+               RBT5301 is closing 
+[  687.947405] Data is being inserted
+[  687.947408] In the KProbe read
+[  687.947409] 
+               RBT5301 is opening 
+[  687.947412] 
+               RBT5301 Name input from read
+[  687.947412] 
+               RBT5301 is closing 
+[  687.947415] Next element is NULL
+[  687.947417]  -1 
+[  687.947418] 
+               KPROBES is closing 
+[  687.947420] 
+               KPROBES is opening 
+[  687.947424] In the KProbe read
+[  687.947432] 
+               KPROBES is closing 
+[  687.947435] 
+               KPROBES is opening 
+[  687.947447] 
+               RBT5301 is closing 
+[  687.947452] 
+               RBT5301 is opening 
+[  687.947453] In the KProbe read
+[  687.947454] 
+               RBT5301 Name input from read
+[  687.947454] Next element is NULL
+[  687.947455]  -1 
+[  687.947462] 
+               KPROBES is closing 
+[  687.947465] 
+               KPROBES is opening 
+[  687.947473] In the KProbe read
+[  687.947480] 
+               RBT5301 is closing 
+[  687.947487] 
+               KPROBES is closing 
+[  687.947490] 
+               KPROBES is opening 
+[  687.947499] In the KProbe read
+[  687.947504] 
+               KPROBES is closing 
+[  687.947507] 
+               KPROBES is opening 
+[  687.947512] In the KProbe read
+[  687.947518] 
+               KPROBES is closing 
+[  687.947520] 
+               KPROBES is opening 
+[  687.947524] In the KProbe read
+[  687.947529] 
+               KPROBES is closing 
+[  687.947532] 
+               KPROBES is opening 
+[  687.947536] In the KProbe read
+[  687.947541] 
+               KPROBES is closing 
+[  789.096397] 
+               KPROBES is opening 
+[  789.096585] Write function for KPROBE being called
+[  789.096587] Flag value: 1
+[  789.096589] Offset value: 0
+[  789.096591] Function name: rbt530_driver_write
+[  789.153320] return value for registering 0
+[  789.153320] Planted kprobe
+[  789.153327] 
+               KPROBES is closing 
+[  789.153347] 
+               RBT5301 is opening 
+[  789.153349] IOCTL
+[  789.153349] ASCENDING
+[  789.153350]  Command change 0 
+[  789.153351] 
+               RBT5301 is closing 
+[  789.153418] 
+               RBT5301 is opening 
+[  789.153434] 
+               RBT5301 is opening 
+[  789.153450] PROBE HIT 
+[  789.153451] 
+               KPROBES is opening 
+[  789.153453] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  789.153454] kprobe values: 789168280524  4407 -1059381056
+[  789.153454] In the Post handler function 
+[  789.153455] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  789.153456] Performing write: Key value = 0, Data value = 40
+[  789.153457] Data is being replaced
+[  789.153457] In the KProbe read
+[  789.153465] 
+               RBT5301 Name input from read
+[  789.153465]  40 0 
+[  789.153468] 
+               RBT5301 is closing 
+[  789.153471] 
+               RBT5301 is opening 
+[  789.153472] PROBE HIT 
+[  789.153474] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  789.153474] kprobe values: 789168301230  4407 -1059381056
+[  789.153474] In the Post handler function 
+[  789.153475] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  789.153475] 
+               RBT5301 is closing 
+[  789.153476] Performing write: Key value = 1, Data value = 41
+[  789.153476] Data is being replaced
+[  789.153480] 
+               RBT5301 is opening 
+[  789.153481] 
+               RBT5301 Name input from read
+[  789.153482]  40 0 
+[  789.153484] 
+               KPROBES is closing 
+[  789.153487] 
+               KPROBES is opening 
+[  789.153488] 
+               RBT5301 is closing 
+[  789.153490] 
+               RBT5301 is opening 
+[  789.153492] 
+               RBT5301 Name input from read
+[  789.153492] In the KProbe read
+[  789.153493]  41 1 
+[  789.153497] 
+               RBT5301 is closing 
+[  789.153499] 
+               RBT5301 is opening 
+[  789.153500] PROBE HIT 
+[  789.153501] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  789.153502] kprobe values: 789168328869  4407 -1059381056
+[  789.153502] In the Post handler function 
+[  789.153502] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  789.153503] 
+               KPROBES is closing 
+[  789.153503] Performing write: Key value = 2, Data value = 42
+[  789.153504] Data is being replaced
+[  789.153505] 
+               KPROBES is opening 
+[  789.153509] 
+               RBT5301 is closing 
+[  789.153510] In the KProbe read
+[  789.153512] 
+               RBT5301 is opening 
+[  789.153513] 
+               RBT5301 Name input from read
+[  789.153514]  41 1 
+[  789.153514] 
+               RBT5301 is closing 
+[  789.153516] 
+               RBT5301 is opening 
+[  789.153517] PROBE HIT 
+[  789.153518] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  789.153519] kprobe values: 789168345976  4407 -1059381056
+[  789.153519] 
+               KPROBES is closing 
+[  789.153519] In the Post handler function 
+[  789.153520] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  789.153520] Performing write: Key value = 3, Data value = 43
+[  789.153521] Data is being replaced
+[  789.153521] 
+               KPROBES is opening 
+[  789.153526] 
+               RBT5301 is closing 
+[  789.153528] 
+               RBT5301 is opening 
+[  789.153530] 
+               RBT5301 Name input from read
+[  789.153530] 
+               RBT5301 is closing 
+[  789.153531]  42 2 
+[  789.153532] 
+               RBT5301 is opening 
+[  789.153533] PROBE HIT 
+[  789.153534] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  789.153534] kprobe values: 789168361464  4407 -1059381056
+[  789.153535] In the Post handler function 
+[  789.153535] In the KProbe read
+[  789.153536] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  789.153536] Performing write: Key value = 4, Data value = 44
+[  789.153536] Data is being replaced
+[  789.153540] 
+               KPROBES is closing 
+[  789.153541] 
+               KPROBES is opening 
+[  789.153546] 
+               RBT5301 is closing 
+[  789.153550] 
+               RBT5301 is closing 
+[  789.153557] In the KProbe read
+[  789.153571] 
+               KPROBES is closing 
+[  789.153573] 
+               KPROBES is opening 
+[  789.153576] In the KProbe read
+[  789.153590] 
+               KPROBES is closing 
+[  789.153594] 
+               KPROBES is opening 
+[  789.153607] In the KProbe read
+[  789.153621] 
+               KPROBES is closing 
+[  789.153625] 
+               KPROBES is opening 
+[  789.153632] In the KProbe read
+[  789.153639] 
+               KPROBES is closing 
+[  789.153649] 
+               KPROBES is opening 
+[  789.153656] In the KProbe read
+[  789.153660] 
+               KPROBES is closing 
+[  789.153662] 
+               KPROBES is opening 
+[  789.153665] In the KProbe read
+[  789.153669] 
+               KPROBES is closing 
+[  800.437836] 
+               KPROBES is opening 
+[  800.438018] Write function for KPROBE being called
+[  800.438020] Flag value: 1
+[  800.438022] Offset value: 0
+[  800.438024] Function name: rbt530_driver_write
+[  800.509139] return value for registering 0
+[  800.509140] Planted kprobe
+[  800.509146] 
+               KPROBES is closing 
+[  800.509209] 
+               RBT5301 is opening 
+[  800.509211] IOCTL
+[  800.509211] DESCENDING
+[  800.509212]  Command change 1 
+[  800.509213] 
+               RBT5301 is closing 
+[  800.509277] 
+               RBT5301 is opening 
+[  800.509288] 
+               RBT5301 is opening 
+[  800.509303] PROBE HIT 
+[  800.509306] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  800.509307] kprobe values: 800524846225  4427 -1059381056
+[  800.509308] In the Post handler function 
+[  800.509308] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  800.509309] Performing write: Key value = 0, Data value = 40
+[  800.509310] Data is being replaced
+[  800.509311] 
+               RBT5301 Name input from read
+[  800.509311]  44 4 
+[  800.509321] 
+               RBT5301 is closing 
+[  800.509322] 
+               KPROBES is opening 
+[  800.509325] 
+               RBT5301 is opening 
+[  800.509326] PROBE HIT 
+[  800.509327] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  800.509328] kprobe values: 800524867208  4427 -1059381056
+[  800.509328] In the Post handler function 
+[  800.509329] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  800.509329] Performing write: Key value = 1, Data value = 41
+[  800.509330] Data is being replaced
+[  800.509330] 
+               RBT5301 is closing 
+[  800.509333] 
+               RBT5301 is opening 
+[  800.509335] 
+               RBT5301 Name input from read
+[  800.509335]  44 4 
+[  800.509339] In the KProbe read
+[  800.509340] 
+               RBT5301 is closing 
+[  800.509342] 
+               RBT5301 is opening 
+[  800.509343] 
+               RBT5301 is closing 
+[  800.509343] 
+               RBT5301 Name input from read
+[  800.509344]  43 3 
+[  800.509346] 
+               RBT5301 is opening 
+[  800.509347] PROBE HIT 
+[  800.509348] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  800.509348] kprobe values: 800524887598  4427 -1059381056
+[  800.509349] In the Post handler function 
+[  800.509349] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  800.509350] Performing write: Key value = 2, Data value = 42
+[  800.509350] Data is being replaced
+[  800.509356] 
+               KPROBES is closing 
+[  800.509359] 
+               KPROBES is opening 
+[  800.509360] 
+               RBT5301 is closing 
+[  800.509362] 
+               RBT5301 is opening 
+[  800.509363] 
+               RBT5301 Name input from read
+[  800.509364]  43 3 
+[  800.509365] In the KProbe read
+[  800.509369] 
+               RBT5301 is closing 
+[  800.509371] 
+               RBT5301 is opening 
+[  800.509371] 
+               KPROBES is closing 
+[  800.509372] 
+               RBT5301 Name input from read
+[  800.509372]  42 2 
+[  800.509374] 
+               RBT5301 is closing 
+[  800.509374] 
+               KPROBES is opening 
+[  800.509375] 
+               RBT5301 is closing 
+[  800.509377] 
+               RBT5301 is opening 
+[  800.509378] PROBE HIT 
+[  800.509379] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  800.509379] kprobe values: 800524918467  4427 -1059381056
+[  800.509380] In the Post handler function 
+[  800.509380] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  800.509380] Performing write: Key value = 3, Data value = 43
+[  800.509381] In the KProbe read
+[  800.509381] Data is being replaced
+[  800.509391] 
+               RBT5301 is closing 
+[  800.509393] 
+               RBT5301 is opening 
+[  800.509394] PROBE HIT 
+[  800.509395] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  800.509396] kprobe values: 800524934959  4427 -1059381056
+[  800.509396] In the Post handler function 
+[  800.509396] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  800.509397] Performing write: Key value = 4, Data value = 44
+[  800.509397] 
+               KPROBES is closing 
+[  800.509398] Data is being replaced
+[  800.509400] 
+               KPROBES is opening 
+[  800.509401] 
+               RBT5301 is closing 
+[  800.509408] In the KProbe read
+[  800.509419] 
+               KPROBES is closing 
+[  800.509421] 
+               KPROBES is opening 
+[  800.509425] In the KProbe read
+[  800.509429] 
+               KPROBES is closing 
+[  800.509431] 
+               KPROBES is opening 
+[  800.509435] In the KProbe read
+[  800.509439] 
+               KPROBES is closing 
+[  800.509441] 
+               KPROBES is opening 
+[  800.509445] In the KProbe read
+[  800.509450] 
+               KPROBES is closing 
+[  800.509452] 
+               KPROBES is opening 
+[  800.509455] In the KProbe read
+[  800.509460] 
+               KPROBES is closing 
+[  800.509462] 
+               KPROBES is opening 
+[  800.509466] In the KProbe read
+[  800.509470] 
+               KPROBES is closing 
+[  800.509473] 
+               KPROBES is opening 
+[  800.509477] In the KProbe read
+[  800.509481] 
+               KPROBES is closing 
+[  811.149465] 
+               KPROBES is opening 
+[  811.149654] Write function for KPROBE being called
+[  811.149657] Flag value: 1
+[  811.149659] Offset value: 0
+[  811.149661] Function name: rbt530_driver_read
+[  811.229967] return value for registering 0
+[  811.229968] Planted kprobe
+[  811.229974] 
+               KPROBES is closing 
+[  811.229994] 
+               RBT5301 is opening 
+[  811.229996] IOCTL
+[  811.229996] ASCENDING
+[  811.229997]  Command change 0 
+[  811.229999] 
+               RBT5301 is closing 
+[  811.230123] 
+               RBT5301 is opening 
+[  811.230134] 
+               KPROBES is opening 
+[  811.230139] 
+               RBT5301 is opening 
+[  811.230140] In the KProbe read
+[  811.230143] PROBE HIT 
+[  811.230145] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  811.230146] kprobe values: 811246331284  4449 -1059381248
+[  811.230146] In the Post handler function 
+[  811.230147] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  811.230147] 
+               RBT5301 Name input from read
+[  811.230148]  40 0 
+[  811.230150] 
+               KPROBES is closing 
+[  811.230152] 
+               KPROBES is opening 
+[  811.230158] Performing write: Key value = 0, Data value = 40
+[  811.230158] 
+               RBT5301 is closing 
+[  811.230159] Data is being replaced
+[  811.230161] 
+               RBT5301 is opening 
+[  811.230161] In the KProbe read
+[  811.230162] PROBE HIT 
+[  811.230163] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  811.230164] kprobe values: 811246349296  4449 -1059381248
+[  811.230164] In the Post handler function 
+[  811.230165] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  811.230165] 
+               RBT5301 Name input from read
+[  811.230165]  40 0 
+[  811.230169] 
+               RBT5301 is closing 
+[  811.230170] 
+               RBT5301 is closing 
+[  811.230171] 
+               RBT5301 is opening 
+[  811.230172] 
+               KPROBES is closing 
+[  811.230172] PROBE HIT 
+[  811.230173] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  811.230173] 
+               RBT5301 is opening 
+[  811.230174] kprobe values: 811246358795  4449 -1059381248
+[  811.230174] In the Post handler function 
+[  811.230175] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  811.230175] 
+               RBT5301 Name input from read
+[  811.230175] 
+               KPROBES is opening 
+[  811.230176]  40 0 
+[  811.230177] Performing write: Key value = 1, Data value = 41
+[  811.230177] Data is being replaced
+[  811.230181] In the KProbe read
+[  811.230182] 
+               RBT5301 is closing 
+[  811.230184] 
+               RBT5301 is opening 
+[  811.230185] Performing write: Key value = 2, Data value = 42
+[  811.230186] Data is being replaced
+[  811.230186] 
+               RBT5301 is closing 
+[  811.230188] 
+               RBT5301 is opening 
+[  811.230189] PROBE HIT 
+[  811.230190] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  811.230190] kprobe values: 811246375936  4449 -1059381248
+[  811.230191] In the Post handler function 
+[  811.230191] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  811.230191] 
+               RBT5301 Name input from read
+[  811.230192]  40 0 
+[  811.230192] 
+               KPROBES is closing 
+[  811.230194] 
+               KPROBES is opening 
+[  811.230197] 
+               RBT5301 is closing 
+[  811.230197] In the KProbe read
+[  811.230198] 
+               RBT5301 is opening 
+[  811.230199] PROBE HIT 
+[  811.230200] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  811.230201] kprobe values: 811246386169  4449 -1059381248
+[  811.230201] In the Post handler function 
+[  811.230201] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  811.230201] 
+               RBT5301 Name input from read
+[  811.230202]  41 1 
+[  811.230202] 
+               RBT5301 is closing 
+[  811.230205] 
+               RBT5301 is opening 
+[  811.230206] Performing write: Key value = 3, Data value = 43
+[  811.230206] Data is being replaced
+[  811.230207] 
+               RBT5301 is closing 
+[  811.230212] 
+               RBT5301 is closing 
+[  811.230214] 
+               RBT5301 is opening 
+[  811.230215] Performing write: Key value = 4, Data value = 44
+[  811.230216] Data is being replaced
+[  811.230217] 
+               KPROBES is closing 
+[  811.230219] 
+               KPROBES is opening 
+[  811.230221] 
+               RBT5301 is closing 
+[  811.230224] In the KProbe read
+[  811.230233] 
+               KPROBES is closing 
+[  811.230235] 
+               KPROBES is opening 
+[  811.230238] In the KProbe read
+[  811.230254] 
+               KPROBES is closing 
+[  811.230260] 
+               KPROBES is opening 
+[  811.230267] In the KProbe read
+[  811.230274] 
+               KPROBES is closing 
+[  811.230279] 
+               KPROBES is opening 
+[  811.230285] In the KProbe read
+[  811.230291] 
+               KPROBES is closing 
+[  811.230294] 
+               KPROBES is opening 
+[  811.230300] In the KProbe read
+[  811.230306] 
+               KPROBES is closing 
+[  811.230310] 
+               KPROBES is opening 
+[  811.230333] In the KProbe read
+[  811.230339] 
+               KPROBES is closing 
+[  818.575953] 
+               KPROBES is opening 
+[  818.576142] Write function for KPROBE being called
+[  818.576144] Flag value: 1
+[  818.576146] Offset value: 0
+[  818.576148] Function name: rbt530_driver_read
+[  818.619216] return value for registering 0
+[  818.619217] Planted kprobe
+[  818.619223] 
+               KPROBES is closing 
+[  818.619245] 
+               RBT5301 is opening 
+[  818.619247] IOCTL
+[  818.619248] ASCENDING
+[  818.619249]  Command change 0 
+[  818.619250] 
+               RBT5301 is closing 
+[  818.619314] 
+               RBT5301 is opening 
+[  818.619327] 
+               RBT5301 is opening 
+[  818.619340] Performing write: Key value = 0, Data value = 40
+[  818.619340] Data is being replaced
+[  818.619349] 
+               RBT5301 is closing 
+[  818.619349] PROBE HIT 
+[  818.619352] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  818.619353] 
+               RBT5301 is opening 
+[  818.619353] kprobe values: 818635970719  4471 -1059381248
+[  818.619354] In the Post handler function 
+[  818.619354] Performing write: Key value = 1, Data value = 41
+[  818.619355] Data is being replaced
+[  818.619356] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  818.619357] 
+               RBT5301 Name input from read
+[  818.619357]  40 0 
+[  818.619360] 
+               KPROBES is opening 
+[  818.619364] 
+               RBT5301 is closing 
+[  818.619365] In the KProbe read
+[  818.619366] 
+               RBT5301 is opening 
+[  818.619367] Performing write: Key value = 2, Data value = 42
+[  818.619367] Data is being replaced
+[  818.619375] 
+               RBT5301 is closing 
+[  818.619380] 
+               RBT5301 is opening 
+[  818.619382] PROBE HIT 
+[  818.619384] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  818.619385] kprobe values: 818636002057  4471 -1059381248
+[  818.619386] In the Post handler function 
+[  818.619386] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  818.619387] 
+               RBT5301 Name input from read
+[  818.619388]  40 0 
+[  818.619388] 
+               KPROBES is closing 
+[  818.619391] 
+               KPROBES is opening 
+[  818.619393] 
+               RBT5301 is closing 
+[  818.619396] 
+               RBT5301 is opening 
+[  818.619398] Performing write: Key value = 3, Data value = 43
+[  818.619398] In the KProbe read
+[  818.619398] Data is being replaced
+[  818.619404] 
+               RBT5301 is closing 
+[  818.619406] 
+               RBT5301 is opening 
+[  818.619408] Performing write: Key value = 4, Data value = 44
+[  818.619408] Data is being replaced
+[  818.619413] 
+               RBT5301 is closing 
+[  818.619416] 
+               RBT5301 is opening 
+[  818.619418] PROBE HIT 
+[  818.619419] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  818.619420] kprobe values: 818636037522  4471 -1059381248
+[  818.619421] In the Post handler function 
+[  818.619422] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  818.619422] 
+               RBT5301 Name input from read
+[  818.619423]  40 0 
+[  818.619427] 
+               RBT5301 is closing 
+[  818.619430] 
+               RBT5301 is opening 
+[  818.619431] PROBE HIT 
+[  818.619433] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  818.619434] kprobe values: 818636051142  4471 -1059381248
+[  818.619434] In the Post handler function 
+[  818.619435] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  818.619436] 
+               RBT5301 Name input from read
+[  818.619436]  40 0 
+[  818.619440] 
+               RBT5301 is closing 
+[  818.619443] 
+               RBT5301 is opening 
+[  818.619444] PROBE HIT 
+[  818.619446] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  818.619446] kprobe values: 818636063881  4471 -1059381248
+[  818.619447] In the Post handler function 
+[  818.619448] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  818.619449] 
+               RBT5301 Name input from read
+[  818.619449]  40 0 
+[  818.619453] 
+               RBT5301 is closing 
+[  818.619479] 
+               KPROBES is closing 
+[  818.619483] 
+               RBT5301 is closing 
+[  818.619483] 
+               KPROBES is opening 
+[  818.619494] In the KProbe read
+[  818.619499] 
+               KPROBES is closing 
+[  818.619501] 
+               KPROBES is opening 
+[  818.619504] In the KProbe read
+[  818.619507] 
+               KPROBES is closing 
+[  818.619509] 
+               KPROBES is opening 
+[  818.619512] In the KProbe read
+[  818.619515] 
+               KPROBES is closing 
+[  818.619517] 
+               KPROBES is opening 
+[  818.619520] In the KProbe read
+[  818.619523] 
+               KPROBES is closing 
+[  818.619525] 
+               KPROBES is opening 
+[  818.619528] In the KProbe read
+[  818.619531] 
+               KPROBES is closing 
+[  818.619532] 
+               KPROBES is opening 
+[  818.619535] In the KProbe read
+[  818.619538] 
+               KPROBES is closing 
+[  818.619540] 
+               KPROBES is opening 
+[  818.619543] In the KProbe read
+[  818.619546] 
+               KPROBES is closing 
+[  818.619548] 
+               KPROBES is opening 
+[  818.619550] In the KProbe read
+[  818.619554] 
+               KPROBES is closing 
+[  866.104631] 
+               KPROBES is opening 
+[  866.104812] Write function for KPROBE being called
+[  866.104815] Flag value: 1
+[  866.104817] Offset value: 0
+[  866.104818] Function name: rbt530_driver_read
+[  866.171081] return value for registering 0
+[  866.171082] Planted kprobe
+[  866.171088] 
+               KPROBES is closing 
+[  866.171108] 
+               RBT5302 is opening 
+[  866.171110] IOCTL
+[  866.171110]  NO ELEMENTS IN ARRAY
+[  866.171111]  -1 
+[  866.171114] 
+               RBT5302 is closing 
+[  866.171193] 
+               RBT5302 is opening 
+[  866.171208] 
+               KPROBES is opening 
+[  866.171214] 
+               RBT5302 is opening 
+[  866.171214] In the KProbe read
+[  866.171215] PROBE HIT 
+[  866.171218] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  866.171219] kprobe values: 866190392925  4494 -1059381248
+[  866.171219] In the Post handler function 
+[  866.171220] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  866.171221] 
+               RBT5302 Name input from read
+[  866.171221] Next element is NULL
+[  866.171221]  -1 
+[  866.171230] 
+               KPROBES is closing 
+[  866.171233] 
+               KPROBES is opening 
+[  866.171242] Performing write: Key value = 0, Data value = 10
+[  866.171242] Data is being inserted
+[  866.171243] 
+               RBT5302 is closing 
+[  866.171247] 
+               RBT5302 is opening 
+[  866.171248] PROBE HIT 
+[  866.171249] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  866.171250] kprobe values: 866190423449  4494 -1059381248
+[  866.171250] In the Post handler function 
+[  866.171250] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  866.171251] 
+               RBT5302 Name input from read
+[  866.171251] Next element is NULL
+[  866.171251]  -1 
+[  866.171251] 
+               RBT5302 is closing 
+[  866.171255] 
+               RBT5302 is opening 
+[  866.171256] Performing write: Key value = 1, Data value = 11
+[  866.171256] Data is being inserted
+[  866.171257] In the KProbe read
+[  866.171261] 
+               RBT5302 is closing 
+[  866.171263] 
+               RBT5302 is opening 
+[  866.171264] Performing write: Key value = 2, Data value = 12
+[  866.171265] Data is being inserted
+[  866.171269] 
+               RBT5302 is closing 
+[  866.171271] 
+               RBT5302 is opening 
+[  866.171272] Performing write: Key value = 3, Data value = 13
+[  866.171272] Data is being inserted
+[  866.171274] 
+               KPROBES is closing 
+[  866.171276] 
+               KPROBES is opening 
+[  866.171277] 
+               RBT5302 is closing 
+[  866.171278] 
+               RBT5302 is opening 
+[  866.171280] Performing write: Key value = 4, Data value = 14
+[  866.171280] Data is being inserted
+[  866.171282] In the KProbe read
+[  866.171284] 
+               RBT5302 is closing 
+[  866.171289] 
+               KPROBES is closing 
+[  866.171291] 
+               KPROBES is opening 
+[  866.171294] 
+               RBT5302 is closing 
+[  866.171296] 
+               RBT5302 is opening 
+[  866.171297] PROBE HIT 
+[  866.171298] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  866.171298] In the KProbe read
+[  866.171299] kprobe values: 866190472327  4494 -1059381248
+[  866.171299] In the Post handler function 
+[  866.171300] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  866.171300] 
+               RBT5302 Name input from read
+[  866.171301] Next element is NULL
+[  866.171301]  -1 
+[  866.171311] 
+               KPROBES is closing 
+[  866.171313] 
+               KPROBES is opening 
+[  866.171317] 
+               RBT5302 is closing 
+[  866.171319] 
+               RBT5302 is opening 
+[  866.171320] PROBE HIT 
+[  866.171321] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  866.171321] kprobe values: 866190495505  4494 -1059381248
+[  866.171322] In the Post handler function 
+[  866.171322] In the KProbe read
+[  866.171323] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  866.171324] 
+               RBT5302 Name input from read
+[  866.171324] Next element is NULL
+[  866.171324]  -1 
+[  866.171326] 
+               KPROBES is closing 
+[  866.171329] 
+               KPROBES is opening 
+[  866.171334] 
+               RBT5302 is closing 
+[  866.171336] 
+               RBT5302 is opening 
+[  866.171338] PROBE HIT 
+[  866.171339] pre_handler: p->addr = 0x000000006dbe7180, ip = ffffffffc0db2001, flags = 0x286
+[  866.171339] In the KProbe read
+[  866.171340] kprobe values: 866190513731  4494 -1059381248
+[  866.171340] In the Post handler function 
+[  866.171341] <(null)> post_handler: p->addr = 0x000000006dbe7180, flags = 0x286
+[  866.171341] 
+               RBT5302 Name input from read
+[  866.171341] Next element is NULL
+[  866.171341]  -1 
+[  866.171343] 
+               KPROBES is closing 
+[  866.171345] 
+               KPROBES is opening 
+[  866.171350] 
+               RBT5302 is closing 
+[  866.171356] In the KProbe read
+[  866.171366] 
+               KPROBES is closing 
+[  866.171368] 
+               KPROBES is opening 
+[  866.171372] In the KProbe read
+[  866.171377] 
+               KPROBES is closing 
+[  866.171379] 
+               KPROBES is opening 
+[  866.171382] In the KProbe read
+[  866.171386] 
+               KPROBES is closing 
+[  866.171388] 
+               KPROBES is opening 
+[  866.171392] In the KProbe read
+[  866.171395] 
+               KPROBES is closing 
+[  877.734296] 
+               KPROBES is opening 
+[  877.734570] Write function for KPROBE being called
+[  877.734573] Flag value: 1
+[  877.734576] Offset value: 0
+[  877.734578] Function name: rbt530_driver_write
+[  877.780455] return value for registering 0
+[  877.780456] Planted kprobe
+[  877.780463] 
+               KPROBES is closing 
+[  877.780482] 
+               RBT5302 is opening 
+[  877.780484] IOCTL
+[  877.780484] ASCENDING
+[  877.780485]  Command change 0 
+[  877.780486] 
+               RBT5302 is closing 
+[  877.780548] 
+               RBT5302 is opening 
+[  877.780563] 
+               RBT5302 is opening 
+[  877.780573] PROBE HIT 
+[  877.780576] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  877.780577] kprobe values: 877800325719  4513 -1059381056
+[  877.780578] In the Post handler function 
+[  877.780578] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  877.780579] Performing write: Key value = 0, Data value = 10
+[  877.780580] Data is being replaced
+[  877.780585] 
+               RBT5302 Name input from read
+[  877.780585]  10 0 
+[  877.780587] 
+               RBT5302 is closing 
+[  877.780590] 
+               KPROBES is opening 
+[  877.780590] 
+               RBT5302 is opening 
+[  877.780592] PROBE HIT 
+[  877.780593] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  877.780594] kprobe values: 877800342363  4513 -1059381056
+[  877.780594] In the Post handler function 
+[  877.780595] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  877.780596] Performing write: Key value = 1, Data value = 11
+[  877.780596] Data is being replaced
+[  877.780600] 
+               RBT5302 is closing 
+[  877.780601] 
+               RBT5302 is closing 
+[  877.780604] 
+               RBT5302 is opening 
+[  877.780605] 
+               RBT5302 is opening 
+[  877.780606] PROBE HIT 
+[  877.780606] In the KProbe read
+[  877.780607] 
+               RBT5302 Name input from read
+[  877.780609]  10 0 
+[  877.780609] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  877.780610] kprobe values: 877800358785  4513 -1059381056
+[  877.780610] In the Post handler function 
+[  877.780611] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  877.780611] Performing write: Key value = 2, Data value = 12
+[  877.780611] Data is being replaced
+[  877.780619] 
+               KPROBES is closing 
+[  877.780622] 
+               KPROBES is opening 
+[  877.780628] 
+               RBT5302 is closing 
+[  877.780631] 
+               RBT5302 is opening 
+[  877.780633] 
+               RBT5302 Name input from read
+[  877.780634]  11 1 
+[  877.780635] 
+               RBT5302 is closing 
+[  877.780638] 
+               RBT5302 is opening 
+[  877.780639] In the KProbe read
+[  877.780640] PROBE HIT 
+[  877.780641] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  877.780642] kprobe values: 877800390612  4513 -1059381056
+[  877.780642] In the Post handler function 
+[  877.780643] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  877.780644] Performing write: Key value = 3, Data value = 13
+[  877.780644] Data is being replaced
+[  877.780646] 
+               RBT5302 is closing 
+[  877.780650] 
+               RBT5302 is opening 
+[  877.780650] 
+               RBT5302 is closing 
+[  877.780651] 
+               RBT5302 Name input from read
+[  877.780652]  11 1 
+[  877.780653] 
+               RBT5302 is opening 
+[  877.780654] PROBE HIT 
+[  877.780655] pre_handler: p->addr = 0x00000000df12e24f, ip = ffffffffc0db20c1, flags = 0x286
+[  877.780656] kprobe values: 877800404530  4513 -1059381056
+[  877.780656] In the Post handler function 
+[  877.780657] <(null)> post_handler: p->addr = 0x00000000df12e24f, flags = 0x286
+[  877.780657] 
+               KPROBES is closing 
+[  877.780657] Performing write: Key value = 4, Data value = 14
+[  877.780658] Data is being replaced
+[  877.780659] 
+               KPROBES is opening 
+[  877.780664] 
+               RBT5302 is closing 
+[  877.780668] 
+               RBT5302 is opening 
+[  877.780669] 
+               RBT5302 Name input from read
+[  877.780670]  12 2 
+[  877.780670] 
+               RBT5302 is closing 
+[  877.780675] In the KProbe read
+[  877.780688] 
+               RBT5302 is closing 
+[  877.780692] 
+               KPROBES is closing 
+[  877.780694] 
+               KPROBES is opening 
+[  877.780704] In the KProbe read
+[  877.780707] 
+               KPROBES is closing 
+[  877.780709] 
+               KPROBES is opening 
+[  877.780712] In the KProbe read
+[  877.780715] 
+               KPROBES is closing 
+[  877.780717] 
+               KPROBES is opening 
+[  877.780720] In the KProbe read
+[  877.780723] 
+               KPROBES is closing 
+[  877.780725] 
+               KPROBES is opening 
+[  877.780728] In the KProbe read
+[  877.780731] 
+               KPROBES is closing 
+[  877.780733] 
+               KPROBES is opening 
+[  877.780736] In the KProbe read
+[  877.780739] 
+               KPROBES is closing 
+[  877.780741] 
+               KPROBES is opening 
+[  877.780743] In the KProbe read
+[  877.780746] 
+               KPROBES is closing 
+[  877.780748] 
+               KPROBES is opening 
+[  877.780751] In the KProbe read
+[  877.780754] 
+               KPROBES is closing 

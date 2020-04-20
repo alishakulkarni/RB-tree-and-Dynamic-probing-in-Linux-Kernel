@@ -1,0 +1,219 @@
+[ 8823.370033] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000447 at 0x0003543c: -110
+[ 8824.394087] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000449 at 0x0003543c: -110
+[ 8825.418439] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000044b at 0x0003543c: -110
+[ 8826.442075] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000044d at 0x0003543c: -110
+[ 8827.466072] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000044f at 0x0003543c: -110
+[ 8828.490423] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000451 at 0x0003543c: -110
+[ 8829.514172] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000453 at 0x0003543c: -110
+[ 8830.538067] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000455 at 0x0003543c: -110
+[ 8831.562448] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000457 at 0x0003543c: -110
+[ 8832.538511] 
+               RBT5301 is opening 
+[ 8832.538518] IOCTL
+[ 8832.538520] DESCENDING
+[ 8832.538523]  Command change 1 
+[ 8832.538528] 
+               RBT5301 is closing 
+[ 8832.538852] 
+               RBT5301 is opening 
+[ 8832.538911] 
+               RBT5301 is opening 
+[ 8832.538934] Performing write: Key value = 0, Data value = 40
+[ 8832.538937] Data is being replaced
+[ 8832.538987] 
+               RBT5301 Name input from read
+[ 8832.538988] 
+               RBT5301 is closing 
+[ 8832.538992]  49 9 
+[ 8832.539001] 
+               RBT5301 is opening 
+[ 8832.539007] Performing write: Key value = 1, Data value = 41
+[ 8832.539008] Data is being replaced
+[ 8832.539045] 
+               RBT5301 is closing 
+[ 8832.539062] 
+               RBT5301 is opening 
+[ 8832.539069] 
+               RBT5301 Name input from read
+[ 8832.539072]  49 9 
+[ 8832.539116] 
+               RBT5301 is closing 
+[ 8832.539136] 
+               RBT5301 is opening 
+[ 8832.539140] 
+               RBT5301 is closing 
+[ 8832.539146] Performing write: Key value = 2, Data value = 42
+[ 8832.539148] Data is being replaced
+[ 8832.539157] 
+               RBT5301 is opening 
+[ 8832.539163] 
+               RBT5301 Name input from read
+[ 8832.539166]  49 9 
+[ 8832.539168] 
+               RBT5301 is closing 
+[ 8832.539179] 
+               RBT5301 is opening 
+[ 8832.539185] Performing write: Key value = 3, Data value = 43
+[ 8832.539188] Data is being replaced
+[ 8832.539193] 
+               RBT5301 is closing 
+[ 8832.539205] 
+               RBT5301 is opening 
+[ 8832.539207] 
+               RBT5301 is closing 
+[ 8832.539211] 
+               RBT5301 Name input from read
+[ 8832.539213]  49 9 
+[ 8832.539220] 
+               RBT5301 is opening 
+[ 8832.539226] Performing write: Key value = 4, Data value = 44
+[ 8832.539228] Data is being replaced
+[ 8832.539253] 
+               RBT5301 is closing 
+[ 8832.539265] 
+               RBT5301 is opening 
+[ 8832.539271] 
+               RBT5301 Name input from read
+[ 8832.539273]  48 8 
+[ 8832.539276] 
+               RBT5301 is closing 
+[ 8832.539288] 
+               RBT5301 is opening 
+[ 8832.539290] 
+               RBT5301 is closing 
+[ 8832.539296] Performing write: Key value = 5, Data value = 45
+[ 8832.539298] Data is being replaced
+[ 8832.539301] 
+               RBT5301 is opening 
+[ 8832.539307] 
+               RBT5301 Name input from read
+[ 8832.539309]  48 8 
+[ 8832.539314] 
+               RBT5301 is closing 
+[ 8832.539323] 
+               RBT5301 is closing 
+[ 8832.539324] 
+               RBT5301 is opening 
+[ 8832.539330] Performing write: Key value = 6, Data value = 46
+[ 8832.539331] Data is being replaced
+[ 8832.539335] 
+               RBT5301 is opening 
+[ 8832.539341] 
+               RBT5301 Name input from read
+[ 8832.539342] 
+               RBT5301 is closing 
+[ 8832.539345]  48 8 
+[ 8832.539350] 
+               RBT5301 is opening 
+[ 8832.539355] Performing write: Key value = 7, Data value = 47
+[ 8832.539356] Data is being replaced
+[ 8832.539369] 
+               RBT5301 is closing 
+[ 8832.539380] 
+               RBT5301 is opening 
+[ 8832.539384] 
+               RBT5301 is closing 
+[ 8832.539386] 
+               RBT5301 Name input from read
+[ 8832.539389]  48 8 
+[ 8832.539396] 
+               RBT5301 is opening 
+[ 8832.539404] Performing write: Key value = 8, Data value = 48
+[ 8832.539405] Data is being replaced
+[ 8832.539408] 
+               RBT5301 is closing 
+[ 8832.539419] 
+               RBT5301 is opening 
+[ 8832.539421] 
+               RBT5301 is closing 
+[ 8832.539425] 
+               RBT5301 Name input from read
+[ 8832.539427]  47 7 
+[ 8832.539431] 
+               RBT5301 is opening 
+[ 8832.539437] Performing write: Key value = 9, Data value = 49
+[ 8832.539438] Data is being replaced
+[ 8832.539464] 
+               RBT5301 is closing 
+[ 8832.539476] 
+               RBT5301 is opening 
+[ 8832.539482] 
+               RBT5301 Name input from read
+[ 8832.539484]  47 7 
+[ 8832.539486] 
+               RBT5301 is closing 
+[ 8832.539514] 
+               RBT5301 is closing 
+[ 8832.586310] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000459 at 0x0003543c: -110
+[ 8833.610090] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000045b at 0x0003543c: -110
+[ 8834.634456] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000045d at 0x0003543c: -110
+[ 8835.658137] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000045f at 0x0003543c: -110
+[ 8836.682236] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000461 at 0x0003543c: -110
+[ 8837.706509] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000463 at 0x0003543c: -110
+[ 8838.730186] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000465 at 0x0003543c: -110
+[ 8839.754130] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000467 at 0x0003543c: -110
+[ 8840.778554] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000469 at 0x0003543c: -110
+[ 8841.802355] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000046b at 0x0003543c: -110
+[ 8842.826484] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000046d at 0x0003543c: -110
+[ 8843.850566] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000046f at 0x0003543c: -110
+[ 8844.874420] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000471 at 0x0003543c: -110
+[ 8845.898176] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000473 at 0x0003543c: -110
+[ 8846.922729] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000475 at 0x0003543c: -110
+[ 8847.950443] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000477 at 0x0003543c: -110
+[ 8848.974393] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000479 at 0x0003543c: -110
+[ 8849.994818] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000047b at 0x0003543c: -110
+[ 8851.018247] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000047d at 0x0003543c: -110
+[ 8852.042242] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000047f at 0x0003543c: -110
+[ 8853.066478] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000481 at 0x0003543c: -110
+[ 8854.090209] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000483 at 0x0003543c: -110
+[ 8855.114396] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000485 at 0x0003543c: -110
+[ 8856.139069] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000487 at 0x0003543c: -110
+[ 8857.162489] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000489 at 0x0003543c: -110
+[ 8858.186268] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000048b at 0x0003543c: -110
+[ 8859.210579] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000048d at 0x0003543c: -110
+[ 8860.234270] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000048f at 0x0003543c: -110
+[ 8861.258283] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000491 at 0x0003543c: -110
+[ 8862.282469] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000493 at 0x0003543c: -110
+[ 8863.306290] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000495 at 0x0003543c: -110
+[ 8864.330278] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000497 at 0x0003543c: -110
+[ 8865.354563] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x00000499 at 0x0003543c: -110
+[ 8866.378235] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000049b at 0x0003543c: -110
+[ 8867.402264] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000049d at 0x0003543c: -110
+[ 8868.426820] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x0000049f at 0x0003543c: -110
+[ 8869.450481] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004a1 at 0x0003543c: -110
+[ 8870.474285] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004a3 at 0x0003543c: -110
+[ 8871.498594] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004a5 at 0x0003543c: -110
+[ 8872.522284] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004a7 at 0x0003543c: -110
+[ 8873.546461] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004a9 at 0x0003543c: -110
+[ 8874.570897] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004ab at 0x0003543c: -110
+[ 8875.594426] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004ad at 0x0003543c: -110
+[ 8876.618427] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004af at 0x0003543c: -110
+[ 8877.642867] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004b1 at 0x0003543c: -110
+[ 8878.666459] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004b3 at 0x0003543c: -110
+[ 8879.690453] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004b5 at 0x0003543c: -110
+[ 8880.714798] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004b7 at 0x0003543c: -110
+[ 8881.738445] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004b9 at 0x0003543c: -110
+[ 8882.762464] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004bb at 0x0003543c: -110
+[ 8883.786730] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004bd at 0x0003543c: -110
+[ 8884.810335] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004bf at 0x0003543c: -110
+[ 8885.834417] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004c1 at 0x0003543c: -110
+[ 8886.858899] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004c3 at 0x0003543c: -110
+[ 8887.882429] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004c5 at 0x0003543c: -110
+[ 8888.906412] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004c7 at 0x0003543c: -110
+[ 8889.930742] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004c9 at 0x0003543c: -110
+[ 8890.954430] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004cb at 0x0003543c: -110
+[ 8891.978498] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004cd at 0x0003543c: -110
+[ 8893.003020] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004cf at 0x0003543c: -110
+[ 8894.026531] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004d1 at 0x0003543c: -110
+[ 8895.050478] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004d3 at 0x0003543c: -110
+[ 8896.074715] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004d5 at 0x0003543c: -110
+[ 8897.098420] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004d7 at 0x0003543c: -110
+[ 8898.122567] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004d9 at 0x0003543c: -110
+[ 8899.146954] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004db at 0x0003543c: -110
+[ 8900.170478] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004dd at 0x0003543c: -110
+[ 8901.194451] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004df at 0x0003543c: -110
+[ 8902.218882] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004e1 at 0x0003543c: -110
+[ 8903.242460] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004e3 at 0x0003543c: -110
+[ 8904.266477] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004e5 at 0x0003543c: -110
+[ 8905.290737] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004e7 at 0x0003543c: -110
+[ 8906.314501] ath10k_pci 0000:02:00.0: failed to wake target for write32 of 0x000004e9 at 0x0003543c: -110

@@ -1,0 +1,74 @@
+Alisha Kulkarni
+ASU ID-1215311903
+
+
+The project contains the following files:
+
+->	rbt530_drv.c (Driver for RB tree structure)
+
+->	rbt530.h
+
+->	main.c	(User code)
+
+->	Makefile	
+
+
+
+
+In order to implement this project, following things need to be done:
+
+
+1. make clean
+
+2. make all
+
+3. insmod rbt530_drv.ko
+
+4. gcc -Wall -pthread -o main main.c
+
+5. ./main a b
+
+	 
+	*******Very Important*****
+While ./main, a and b need to be passed in the command line, where a = device number and b = IOCTL command(Ascending/Descending)
+
+
+./main 1 0 - Read/Write into rbt530_dev1 in Ascending order
+./main 1 1 - Read/Write into rbt530_dev1 in Descending order
+
+./main 2 0 - Read/Write into rbt530_dev2 in Ascending order
+./main 2 1 - Read/Write into rbt530_dev2 in Descending order
+
+6. dmesg
+
+7. rmmod rb530_drv.ko
+
+8 rm main
+
+
+
+The log files in the folder show a sample of the read/write of the rbtree.
+
+There is also a Makefile to run on Galileo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
